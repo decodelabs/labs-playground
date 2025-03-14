@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b992aba664dfb0e12030f8115d9a4ecd",
+    "content-hash": "765bf7e8041c3f17499346d87d79f02e",
     "packages": [
         {
             "name": "brick/math",
@@ -1592,16 +1592,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.1.0",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "775739e520f0c776eb18db363bd124c245a10fc9"
+                "reference": "21e484f3b3355da40770fa130c6a50508ec5ced3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/775739e520f0c776eb18db363bd124c245a10fc9",
-                "reference": "775739e520f0c776eb18db363bd124c245a10fc9",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/21e484f3b3355da40770fa130c6a50508ec5ced3",
+                "reference": "21e484f3b3355da40770fa130c6a50508ec5ced3",
                 "shasum": ""
             },
             "require": {
@@ -1640,9 +1640,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.1.0"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.1.2"
             },
-            "time": "2025-03-14T18:39:30+00:00"
+            "time": "2025-03-14T22:26:48+00:00"
         },
         {
             "name": "decodelabs/iota",

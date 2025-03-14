@@ -15,6 +15,7 @@ use DecodeLabs\Greenleaf\Action\ByMethodTrait;
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
 use DecodeLabs\Tagged\Element;
+use DecodeLabs\Tagged\Markup;
 use DecodeLabs\Zest\Manifest;
 
 class Index implements Action
@@ -70,15 +71,19 @@ class Index implements Action
             $page->appendBody('test', Html::footer('This is a test footer'), 1);
 
             // Layout
-            yield Html::{'template[shadowrootmode=open]'}(function () {
-                yield Html::h1('Hello, world!');
+            $page->layout = function($content) {
+                yield Html::{'template[shadowrootmode=open]'}(function () {
+                    yield Html::h1('Hello, world!');
 
-                yield Html::div(function () {
-                    yield Html::{'slot[name=layout]'}();
+                    yield Html::div(function () {
+                        yield Html::{'slot[name=layout]'}();
+                    });
+
+                    yield Html::div('FOOTER');
                 });
 
-                yield Html::div('FOOTER');
-            });
+                yield $content;
+            };
 
             // Content
             yield Html::{'main[slot=layout]'}(function () {
