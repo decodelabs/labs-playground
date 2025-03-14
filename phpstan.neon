@@ -1,4 +1,5 @@
 parameters:
     paths:
+        - config
         - src
-    level: 9
+    level: max

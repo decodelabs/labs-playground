@@ -1,0 +1,38 @@
+{
+  "_components-DFTbhbVw.js": {
+    "file": "components-DFTbhbVw.js",
+    "name": "components",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vue-D2l5m4x1.js",
+      "_react-DfdHG_9B.js"
+    ]
+  },
+  "_react-DfdHG_9B.js": {
+    "file": "react-DfdHG_9B.js",
+    "name": "react"
+  },
+  "_vue-D2l5m4x1.js": {
+    "file": "vue-D2l5m4x1.js",
+    "name": "vue"
+  },
+  "src/@scripts/main.js": {
+    "file": "main-B4emneXX.js",
+    "name": "main",
+    "src": "src/@scripts/main.js",
+    "isEntry": true,
+    "imports": [
+      "_react-DfdHG_9B.js",
+      "_vue-D2l5m4x1.js"
+    ],
+    "dynamicImports": [
+      "_components-DFTbhbVw.js",
+      "_components-DFTbhbVw.js",
+      "_components-DFTbhbVw.js",
+      "_components-DFTbhbVw.js"
+    ],
+    "css": [
+      "main-BFobhslo.css"
+    ]
+  }
+}

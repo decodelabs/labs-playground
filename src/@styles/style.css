@@ -1,0 +1,8 @@
+content-island {
+    display: block;
+    background: grey;
+
+    &:state(mounted) {
+        background: lightgreen;
+    }
+}
