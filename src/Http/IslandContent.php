@@ -24,6 +24,16 @@ class IslandContent implements Action
     public function get(
         Request $request
     ): Response {
-        return Harvest::html(Html::p('This is island content!'));
+        return Harvest::html(function() {
+            yield Html::p('This is fragment content!');
+
+            yield Html::{'component-island[src=AnotherReactThing]'}(function ($el) {
+                yield Html::div('Fallback content');
+
+                $el->setAttribute('props', json_encode([
+                    'says' => 'this is nested!'
+                ]));
+            });
+        });
     }
 }

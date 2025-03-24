@@ -25,11 +25,11 @@ class Index implements Action
     public function get(): Page
     {
         return new Page(function(Page $page) {
-            $path = Genesis::$hub->applicationPath . '/public/assets/zest/.vite/manifest.json';
-            $manifest = Manifest::load($path);
-            $page->importZestManifest($manifest);
-
-            $page->baseTarget = '_blank';
+            $page->importZestManifest(
+                Manifest::load(
+                    Genesis::$hub->applicationPath . '/public/assets/zest/.vite/manifest.json'
+                )
+            );
 
             $page->title = function() {
                 yield 'Hello ';
@@ -53,41 +53,38 @@ class Index implements Action
                 href: '/favicon.ico'
             );
 
-            $page->addScript(
-                key: 'test',
-                src: '/test.js'
-            );
-
-            $page->appendHead('test2', Html::link(null, [
-                'rel' => 'stylesheet',
-                'href' => '/test2.css'
-            ]), 2);
-
-            $page->appendHead('test', Html::link(null, [
-                'rel' => 'stylesheet',
-                'href' => '/test.css'
-            ]));
-
-            $page->appendBody('test', Html::footer('This is a test footer'), 1);
-
             // Layout
             $page->layout = function($content) {
-                yield Html::{'template[shadowrootmode=open]'}(function () {
-                    yield Html::h1('Hello, world!');
+                yield Html::h1('Hello, world!');
 
-                    yield Html::div(function () {
-                        yield Html::{'slot[name=layout]'}();
+                yield Html::header(function() {
+                    yield Html::nav(function() {
+                        yield Html::{'a'}('Home', [
+                            'href' => '/'
+                        ]);
+
+                        yield Html::{'a'}('Island content', [
+                            'href' => '/island-content'
+                        ]);
                     });
 
-                    yield Html::div('FOOTER');
+                    yield Html::{'component-island[src=AnotherThing]'}(function ($el) {
+                        yield Html::div('Fallback content');
+
+                        $el->setAttribute('props', json_encode([
+                            'action' => 'rocks'
+                        ]));
+                    });
                 });
 
-                yield $content;
+                yield Html::div($content);
+
+                yield Html::div('FOOTER');
             };
 
             // Content
-            yield Html::{'main[slot=layout]'}(function () {
-                yield Html::{'content-island'}(function (Element $el) {
+            yield Html::{'page-island'}(function () {
+                yield Html::{'fragment-island'}(function (Element $el) {
                     $el->setAttributes([
                         'src' => $this->context->createUrl('/island-content')
                     ]);
@@ -95,20 +92,24 @@ class Index implements Action
                     yield Html::p('This is fallback content!');
                 });
 
-                yield Html::{'component-island[vue:src=MyThing]'}(function ($el) {
-                    yield Html::div('This is slot content!');
+                yield Html::{'component-island[src=MyThing]'}(function ($el) {
+                    yield Html::div('Fallback content!');
                 });
 
-                yield Html::{'component-island[vue:src=AnotherThing]'}(function ($el) {
+                yield Html::{'component-island[src=ReactThing]'}(function ($el) {
                     yield Html::div('Fallback content');
+
+                    $el->setAttribute('props', json_encode([
+                        'test' => 'test'
+                    ]));
                 });
 
-                yield Html::{'component-island[react:src=ReactThing]'}(function ($el) {
+                yield Html::{'component-island[src=AnotherReactThing]'}(function ($el) {
                     yield Html::div('Fallback content');
-                });
 
-                yield Html::{'component-island[react:src=AnotherReactThing]'}(function ($el) {
-                    yield Html::div('Fallback content');
+                    $el->setAttribute('props', json_encode([
+                        'says' => 'this is neat'
+                    ]));
                 });
             });
         });

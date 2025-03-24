@@ -1,17 +1,17 @@
 import React from 'react';
 
-export const ReactThing = () => {
+export const ReactThing = ({ test }) => {
     return (
         <div>
-            <h1>React Thing</h1>
+            <p>React Thing: {test}</p>
         </div>
     );
 }
 
-export const AnotherReactThing = () => {
+export const AnotherReactThing = ({ says }) => {
     return (
         <div>
-            <h1>Another React Thing</h1>
+            <p>Another React Thing says: {says}</p>
         </div>
     );
 }

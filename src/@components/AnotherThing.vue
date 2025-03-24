@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from 'vue';
-
-const action = ref('does things');
+const props = defineProps({
+    action: String,
+});
 </script>
 
 <template>

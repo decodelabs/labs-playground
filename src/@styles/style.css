@@ -1,8 +1,31 @@
-content-island {
+@view-transition {
+    navigation: auto;
+}
+
+fragment-island {
     display: block;
     background: grey;
 
     &:state(mounted) {
         background: lightgreen;
     }
+}
+
+component-island {
+    display: block;
+    background: grey;
+
+    &:state(mounted) {
+        background: lightblue;
+    }
+
+    &[src="MyThing"] {
+        background: lightcoral;
+    }
+}
+
+page-island {
+    display: block;
+    border: 2px solid red;
+    padding: 1em;
 }
