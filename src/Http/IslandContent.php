@@ -27,7 +27,7 @@ class IslandContent implements Action
         return Harvest::html(function() {
             yield Html::p('This is fragment content!');
 
-            yield Html::{'component-island[src=AnotherReactThing]'}(function ($el) {
+            yield Html::{'component-island[name=AnotherReactThing]'}(function ($el) {
                 yield Html::div('Fallback content');
 
                 $el->setAttribute('props', json_encode([
