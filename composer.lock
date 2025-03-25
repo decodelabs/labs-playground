@@ -421,16 +421,16 @@
         },
         {
             "name": "decodelabs/collections",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/collections.git",
-                "reference": "8ffb4aea6f594bbf8148e3293b897b480f4603f1"
+                "reference": "5a4b16bae09446db05bec59977615f2babfbbf0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/collections/zipball/8ffb4aea6f594bbf8148e3293b897b480f4603f1",
-                "reference": "8ffb4aea6f594bbf8148e3293b897b480f4603f1",
+                "url": "https://api.github.com/repos/decodelabs/collections/zipball/5a4b16bae09446db05bec59977615f2babfbbf0e",
+                "reference": "5a4b16bae09446db05bec59977615f2babfbbf0e",
                 "shasum": ""
             },
             "require": {
@@ -486,9 +486,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/collections/issues",
-                "source": "https://github.com/decodelabs/collections/tree/v0.10.6"
+                "source": "https://github.com/decodelabs/collections/tree/v0.10.7"
             },
-            "time": "2025-02-20T14:10:38+00:00"
+            "time": "2025-03-24T11:46:50+00:00"
         },
         {
             "name": "decodelabs/compass",
@@ -1461,16 +1461,16 @@
         },
         {
             "name": "decodelabs/harvest",
-            "version": "v0.4.5",
+            "version": "v0.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/harvest.git",
-                "reference": "551371681e2e8ea947370970f6bfa61421a94498"
+                "reference": "f996999de8b772d8c2ca881f7a381791644db72b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/551371681e2e8ea947370970f6bfa61421a94498",
-                "reference": "551371681e2e8ea947370970f6bfa61421a94498",
+                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/f996999de8b772d8c2ca881f7a381791644db72b",
+                "reference": "f996999de8b772d8c2ca881f7a381791644db72b",
                 "shasum": ""
             },
             "require": {
@@ -1534,9 +1534,9 @@
             "description": "PSR-15 HTTP stack without the mess",
             "support": {
                 "issues": "https://github.com/decodelabs/harvest/issues",
-                "source": "https://github.com/decodelabs/harvest/tree/v0.4.5"
+                "source": "https://github.com/decodelabs/harvest/tree/v0.4.6"
             },
-            "time": "2025-03-14T17:24:30+00:00"
+            "time": "2025-03-25T13:42:03+00:00"
         },
         {
             "name": "decodelabs/hatch",
@@ -1900,16 +1900,16 @@
         },
         {
             "name": "decodelabs/pandora",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/pandora.git",
-                "reference": "abcb9f3b2ba14587d45f699667ea03600bfe3803"
+                "reference": "be2f282d1551dd4b968ebbd2f7cbed106cd2a4e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/pandora/zipball/abcb9f3b2ba14587d45f699667ea03600bfe3803",
-                "reference": "abcb9f3b2ba14587d45f699667ea03600bfe3803",
+                "url": "https://api.github.com/repos/decodelabs/pandora/zipball/be2f282d1551dd4b968ebbd2f7cbed106cd2a4e6",
+                "reference": "be2f282d1551dd4b968ebbd2f7cbed106cd2a4e6",
                 "shasum": ""
             },
             "require": {
@@ -1956,22 +1956,22 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/pandora/issues",
-                "source": "https://github.com/decodelabs/pandora/tree/v0.3.0"
+                "source": "https://github.com/decodelabs/pandora/tree/v0.3.1"
             },
-            "time": "2025-02-13T09:32:05+00:00"
+            "time": "2025-03-24T12:32:46+00:00"
         },
         {
             "name": "decodelabs/singularity",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/singularity.git",
-                "reference": "b911a94122208f8756507fd7471077a477dccfd8"
+                "reference": "29d22946fde9dc3b4223fdb610d289d666a82eb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/singularity/zipball/b911a94122208f8756507fd7471077a477dccfd8",
-                "reference": "b911a94122208f8756507fd7471077a477dccfd8",
+                "url": "https://api.github.com/repos/decodelabs/singularity/zipball/29d22946fde9dc3b4223fdb610d289d666a82eb7",
+                "reference": "29d22946fde9dc3b4223fdb610d289d666a82eb7",
                 "shasum": ""
             },
             "require": {
@@ -2011,9 +2011,9 @@
             "description": "Consolidated URI parsing and resolving",
             "support": {
                 "issues": "https://github.com/decodelabs/singularity/issues",
-                "source": "https://github.com/decodelabs/singularity/tree/v0.3.1"
+                "source": "https://github.com/decodelabs/singularity/tree/v0.3.2"
             },
-            "time": "2025-02-18T14:26:43+00:00"
+            "time": "2025-03-25T16:55:40+00:00"
         },
         {
             "name": "decodelabs/slingshot",
@@ -2212,16 +2212,16 @@
         },
         {
             "name": "decodelabs/terminus",
-            "version": "v0.11.2",
+            "version": "v0.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/terminus.git",
-                "reference": "a92dafb5714646a90013d90d267956fc9f5851c1"
+                "reference": "3d80375f9e834890a0059e5cb42d095ba6e70650"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/terminus/zipball/a92dafb5714646a90013d90d267956fc9f5851c1",
-                "reference": "a92dafb5714646a90013d90d267956fc9f5851c1",
+                "url": "https://api.github.com/repos/decodelabs/terminus/zipball/3d80375f9e834890a0059e5cb42d095ba6e70650",
+                "reference": "3d80375f9e834890a0059e5cb42d095ba6e70650",
                 "shasum": ""
             },
             "require": {
@@ -2280,9 +2280,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/terminus/issues",
-                "source": "https://github.com/decodelabs/terminus/tree/v0.11.2"
+                "source": "https://github.com/decodelabs/terminus/tree/v0.11.5"
             },
-            "time": "2025-02-20T14:16:03+00:00"
+            "time": "2025-03-24T12:22:41+00:00"
         },
         {
             "name": "decodelabs/tightrope",
@@ -4103,16 +4103,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.10",
+            "version": "2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "051a3b6b9b80df4ba3a7f801a8b53ad7d8f1c15f"
+                "reference": "8ca5f79a8f63c49b2359065832a654e1ec70ac30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/051a3b6b9b80df4ba3a7f801a8b53ad7d8f1c15f",
-                "reference": "051a3b6b9b80df4ba3a7f801a8b53ad7d8f1c15f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8ca5f79a8f63c49b2359065832a654e1ec70ac30",
+                "reference": "8ca5f79a8f63c49b2359065832a654e1ec70ac30",
                 "shasum": ""
             },
             "require": {
@@ -4157,7 +4157,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-23T14:57:55+00:00"
+            "time": "2025-03-24T13:45:00+00:00"
         }
     ],
     "aliases": [],
