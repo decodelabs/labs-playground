@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37bf4832d58709ae7eb02ef7077176e4",
+    "content-hash": "91d312bc064bb63eb896664eea92f97e",
     "packages": [
         {
             "name": "brick/math",
@@ -263,12 +263,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:decodelabs/castaway.git",
-                "reference": "e7850cf1fb591e52e1270596e8fc5df377aaa1d4"
+                "reference": "6d924f1732ff448d6daa2906edd8dcce329748cb"
             },
             "require": {
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/harvest": "^0.4.1",
-                "decodelabs/tagged": "^0.17",
+                "decodelabs/tagged": "^0.18",
                 "decodelabs/veneer": "^0.12.6",
                 "decodelabs/zest": "^0.5",
                 "php": "^8.4"
@@ -301,7 +301,7 @@
                 }
             ],
             "description": "Front end component islands architecture",
-            "time": "2025-03-26T00:28:48+00:00"
+            "time": "2025-03-26T19:27:12+00:00"
         },
         {
             "name": "decodelabs/clip",
@@ -1592,22 +1592,22 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.1.4",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "17bd757e021ab65338e8ee90ce679f2fb13f421a"
+                "reference": "8c2bfb92f706100550d5f0ab0688371b92c7d22a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/17bd757e021ab65338e8ee90ce679f2fb13f421a",
-                "reference": "17bd757e021ab65338e8ee90ce679f2fb13f421a",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/8c2bfb92f706100550d5f0ab0688371b92c7d22a",
+                "reference": "8c2bfb92f706100550d5f0ab0688371b92c7d22a",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/coercion": "^0.3.1",
                 "decodelabs/exceptional": "^0.5.3",
-                "decodelabs/tagged": "^0.17",
+                "decodelabs/tagged": "^0.18",
                 "php": "^8.4"
             },
             "require-dev": {
@@ -1618,7 +1618,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -1640,9 +1640,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.1.4"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.2.1"
             },
-            "time": "2025-03-26T00:34:00+00:00"
+            "time": "2025-03-26T20:12:00+00:00"
         },
         {
             "name": "decodelabs/iota",
@@ -2133,16 +2133,16 @@
         },
         {
             "name": "decodelabs/tagged",
-            "version": "v0.17.2",
+            "version": "v0.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/tagged.git",
-                "reference": "78d1ba9877ed1950a8ddff357e9e5716cc7a6acf"
+                "reference": "4c12c2725a0aea82ca74cfe6a64434cef4f7603e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/78d1ba9877ed1950a8ddff357e9e5716cc7a6acf",
-                "reference": "78d1ba9877ed1950a8ddff357e9e5716cc7a6acf",
+                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/4c12c2725a0aea82ca74cfe6a64434cef4f7603e",
+                "reference": "4c12c2725a0aea82ca74cfe6a64434cef4f7603e",
                 "shasum": ""
             },
             "require": {
@@ -2177,7 +2177,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-develop": "0.17.x-dev"
+                    "dev-develop": "0.18.x-dev"
                 }
             },
             "autoload": {
@@ -2207,9 +2207,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/tagged/issues",
-                "source": "https://github.com/decodelabs/tagged/tree/v0.17.2"
+                "source": "https://github.com/decodelabs/tagged/tree/v0.18.1"
             },
-            "time": "2025-03-26T10:41:21+00:00"
+            "time": "2025-03-26T19:39:11+00:00"
         },
         {
             "name": "decodelabs/terminus",
