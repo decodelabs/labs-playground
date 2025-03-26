@@ -15,6 +15,7 @@ use DecodeLabs\Greenleaf\Request;
 use DecodeLabs\Harvest;
 use DecodeLabs\Harvest\Response;
 use DecodeLabs\Tagged as Html;
+use DecodeLabs\Tagged\Element;
 use Generator;
 
 class IslandContent implements Action
@@ -27,7 +28,7 @@ class IslandContent implements Action
         return Harvest::html(function() {
             yield Html::p('This is fragment content!');
 
-            yield Html::{'component-island[name=AnotherReactThing]'}(function ($el) {
+            yield Html::{'component-island[name=AnotherReactThing]'}(function (Element $el) {
                 yield Html::div('Fallback content');
 
                 $el->setAttribute('props', json_encode([

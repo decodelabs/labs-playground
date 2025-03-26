@@ -68,7 +68,7 @@ class Index implements Action
                         ]);
                     });
 
-                    yield Html::{'component-island[name=AnotherThing]'}(function ($el) {
+                    yield Html::{'component-island[name=AnotherThing]'}(function (Element $el) {
                         yield Html::div('Fallback content');
 
                         $el->setAttribute('props', json_encode([
@@ -96,7 +96,7 @@ class Index implements Action
                     yield Html::div('Fallback content!');
                 });
 
-                yield Html::{'component-island[name=ReactThing]'}(function ($el) {
+                yield Html::{'component-island[name=ReactThing]'}(function (Element $el) {
                     yield Html::div('Fallback content');
 
                     $el->setAttribute('props', json_encode([
@@ -104,7 +104,7 @@ class Index implements Action
                     ]));
                 });
 
-                yield Html::{'component-island[name=AnotherReactThing]'}(function ($el) {
+                yield Html::{'component-island[name=AnotherReactThing]'}(function (Element $el) {
                     yield Html::div('Fallback content');
 
                     $el->setAttribute('props', json_encode([
