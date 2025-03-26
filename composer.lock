@@ -1592,16 +1592,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "8c2bfb92f706100550d5f0ab0688371b92c7d22a"
+                "reference": "ac32ce8144bfcda8419dea1c1013b7b5f4304f25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/8c2bfb92f706100550d5f0ab0688371b92c7d22a",
-                "reference": "8c2bfb92f706100550d5f0ab0688371b92c7d22a",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/ac32ce8144bfcda8419dea1c1013b7b5f4304f25",
+                "reference": "ac32ce8144bfcda8419dea1c1013b7b5f4304f25",
                 "shasum": ""
             },
             "require": {
@@ -1611,6 +1611,7 @@
                 "php": "^8.4"
             },
             "require-dev": {
+                "decodelabs/genesis": "^0.11.2",
                 "decodelabs/harvest": "^0.4.5",
                 "decodelabs/phpstan-decodelabs": "^0.7.0",
                 "decodelabs/zest": "^0.5.0"
@@ -1640,9 +1641,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.2.1"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.2.2"
             },
-            "time": "2025-03-26T20:12:00+00:00"
+            "time": "2025-03-26T22:07:37+00:00"
         },
         {
             "name": "decodelabs/iota",
