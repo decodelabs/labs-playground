@@ -781,16 +781,16 @@
         },
         {
             "name": "decodelabs/elementary",
-            "version": "v0.4.9",
+            "version": "v0.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/elementary.git",
-                "reference": "9881c225c0c7d908b7c29f1292690fe2d7a8ec08"
+                "reference": "467bf93688c3531d0d41dfad17167c7f0ce79a30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/9881c225c0c7d908b7c29f1292690fe2d7a8ec08",
-                "reference": "9881c225c0c7d908b7c29f1292690fe2d7a8ec08",
+                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/467bf93688c3531d0d41dfad17167c7f0ce79a30",
+                "reference": "467bf93688c3531d0d41dfad17167c7f0ce79a30",
                 "shasum": ""
             },
             "require": {
@@ -832,9 +832,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/elementary/issues",
-                "source": "https://github.com/decodelabs/elementary/tree/v0.4.9"
+                "source": "https://github.com/decodelabs/elementary/tree/v0.4.10"
             },
-            "time": "2025-03-25T20:59:47+00:00"
+            "time": "2025-03-26T12:14:37+00:00"
         },
         {
             "name": "decodelabs/enlighten",
@@ -2133,16 +2133,16 @@
         },
         {
             "name": "decodelabs/tagged",
-            "version": "v0.17.0",
+            "version": "v0.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/tagged.git",
-                "reference": "4d5921208233299b396fad0b2562d37e55068e28"
+                "reference": "78d1ba9877ed1950a8ddff357e9e5716cc7a6acf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/4d5921208233299b396fad0b2562d37e55068e28",
-                "reference": "4d5921208233299b396fad0b2562d37e55068e28",
+                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/78d1ba9877ed1950a8ddff357e9e5716cc7a6acf",
+                "reference": "78d1ba9877ed1950a8ddff357e9e5716cc7a6acf",
                 "shasum": ""
             },
             "require": {
@@ -2207,9 +2207,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/tagged/issues",
-                "source": "https://github.com/decodelabs/tagged/tree/v0.17.0"
+                "source": "https://github.com/decodelabs/tagged/tree/v0.17.2"
             },
-            "time": "2025-03-26T00:25:49+00:00"
+            "time": "2025-03-26T10:41:21+00:00"
         },
         {
             "name": "decodelabs/terminus",
