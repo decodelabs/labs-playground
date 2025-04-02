@@ -11,30 +11,15 @@ namespace DecodeLabs\Playground\Http;
 
 use DecodeLabs\Greenleaf\Action;
 use DecodeLabs\Greenleaf\Action\ByMethodTrait;
-use DecodeLabs\Greenleaf\Request;
-use DecodeLabs\Harvest;
-use DecodeLabs\Harvest\Response;
-use DecodeLabs\Tagged as Html;
-use DecodeLabs\Tagged\Element;
-use Generator;
+use DecodeLabs\Horizon\Page;
 
 class IslandContent implements Action
 {
     use ByMethodTrait;
 
-    public function get(
-        Request $request
-    ): Response {
-        return Harvest::html(function() {
-            yield Html::p('This is fragment content!');
-
-            yield Html::{'component-island[name=AnotherReactThing]'}(function (Element $el) {
-                yield Html::div('Fallback content');
-
-                $el->setAttribute('props', json_encode([
-                    'says' => 'this is nested!'
-                ]));
-            });
-        });
+    public function get(): Page {
+        return Page::fromFragment(
+            fragment: '@components/fragments/island-content',
+        );
     }
 }

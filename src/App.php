@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace DecodeLabs\Playground;
 
 use DecodeLabs\Fabric\App\Generic;
+use DecodeLabs\Genesis;
 
 class App extends Generic
 {
@@ -33,4 +34,9 @@ class App extends Generic
         ];
     }
         */
+
+    public function initializePlatform(): void
+    {
+        Genesis::aliasPath('@components', Genesis::$hub->applicationPath . '/src/@components');
+    }
 }

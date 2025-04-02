@@ -1,13 +1,13 @@
 import '@styles/style.css';
 import createCastawayApp from '@decodelabs/castaway';
-import react from '../../../castaway-client/src/integrations/react';
+import react from '@decodelabs/castaway/react';
 import vue from '@decodelabs/castaway/vue';
 
 createCastawayApp({
     components: {
-        MyThing: () => vue(import('@components/MyThing.vue')),
-        AnotherThing: () => vue(import('@components/AnotherThing.vue')),
-        ReactThing: () => react(import('@components/ReactModule.jsx')),
-        AnotherReactThing: () => react(import('@components/ReactModule.jsx')),
+        MyThing: () => vue(import('@components/my-thing.vue')),
+        AnotherThing: () => vue(import('@components/another-thing.vue')),
+        ReactThing: () => react(import('@components/react-module.jsx')),
+        AnotherReactThing: () => react(import('@components/react-module.jsx')),
     }
 });
