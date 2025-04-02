@@ -5,9 +5,9 @@ import vue from '@decodelabs/castaway/vue';
 
 createCastawayApp({
     components: {
-        MyThing: () => vue(import('@components/my-thing.vue')),
-        AnotherThing: () => vue(import('@components/another-thing.vue')),
-        ReactThing: () => react(import('@components/react-module.jsx')),
-        AnotherReactThing: () => react(import('@components/react-module.jsx')),
+        MyThing: () => vue(import('@components/fragments/my-thing.vue')),
+        AnotherThing: () => vue(import('@components/fragments/another-thing.vue')),
+        ReactThing: () => react(import('@components/fragments/react-module.jsx')),
+        AnotherReactThing: () => react(import('@components/fragments/react-module.jsx')),
     }
 });

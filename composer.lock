@@ -421,16 +421,16 @@
         },
         {
             "name": "decodelabs/collections",
-            "version": "v0.10.7",
+            "version": "v0.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/collections.git",
-                "reference": "5a4b16bae09446db05bec59977615f2babfbbf0e"
+                "reference": "c0dde3a425f1790f39276be6313429504fc7fb11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/collections/zipball/5a4b16bae09446db05bec59977615f2babfbbf0e",
-                "reference": "5a4b16bae09446db05bec59977615f2babfbbf0e",
+                "url": "https://api.github.com/repos/decodelabs/collections/zipball/c0dde3a425f1790f39276be6313429504fc7fb11",
+                "reference": "c0dde3a425f1790f39276be6313429504fc7fb11",
                 "shasum": ""
             },
             "require": {
@@ -459,7 +459,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-develop": "0.10.x-dev"
+                    "dev-develop": "0.11.x-dev"
                 }
             },
             "autoload": {
@@ -486,9 +486,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/collections/issues",
-                "source": "https://github.com/decodelabs/collections/tree/v0.10.7"
+                "source": "https://github.com/decodelabs/collections/tree/v0.11.2"
             },
-            "time": "2025-03-24T11:46:50+00:00"
+            "time": "2025-04-02T22:21:32+00:00"
         },
         {
             "name": "decodelabs/compass",
@@ -720,23 +720,23 @@
         },
         {
             "name": "decodelabs/dovetail",
-            "version": "v0.2.10",
+            "version": "v0.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/dovetail.git",
-                "reference": "5f005e99e726ad7b0ea8f4e0091784999a9a30c0"
+                "reference": "f2cce4677119253df0807e1a813b3329c53dc1cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/dovetail/zipball/5f005e99e726ad7b0ea8f4e0091784999a9a30c0",
-                "reference": "5f005e99e726ad7b0ea8f4e0091784999a9a30c0",
+                "url": "https://api.github.com/repos/decodelabs/dovetail/zipball/f2cce4677119253df0807e1a813b3329c53dc1cc",
+                "reference": "f2cce4677119253df0807e1a813b3329c53dc1cc",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/archetype": "^0.3",
                 "decodelabs/atlas": "^0.12",
                 "decodelabs/coercion": "^0.3",
-                "decodelabs/collections": "^0.10",
+                "decodelabs/collections": "^0.11",
                 "decodelabs/exceptional": "^0.5",
                 "decodelabs/fluidity": "^0.3.4",
                 "decodelabs/lucid": "^0.5",
@@ -775,27 +775,27 @@
             "description": "Comprehensive config solution",
             "support": {
                 "issues": "https://github.com/decodelabs/dovetail/issues",
-                "source": "https://github.com/decodelabs/dovetail/tree/v0.2.10"
+                "source": "https://github.com/decodelabs/dovetail/tree/v0.2.11"
             },
-            "time": "2025-02-20T14:34:48+00:00"
+            "time": "2025-04-02T21:43:23+00:00"
         },
         {
             "name": "decodelabs/elementary",
-            "version": "v0.5.0",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/elementary.git",
-                "reference": "7d34def45bb1002dbc1d1645aa7e7632866179c3"
+                "reference": "24be931713ffbee3331e173714f6ea421ee91abd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/7d34def45bb1002dbc1d1645aa7e7632866179c3",
-                "reference": "7d34def45bb1002dbc1d1645aa7e7632866179c3",
+                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/24be931713ffbee3331e173714f6ea421ee91abd",
+                "reference": "24be931713ffbee3331e173714f6ea421ee91abd",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/coercion": "^0.3",
-                "decodelabs/collections": "^0.10.4",
+                "decodelabs/collections": "^0.11",
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/glitch-support": "^0.5.1",
                 "php": "^8.4"
@@ -832,9 +832,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/elementary/issues",
-                "source": "https://github.com/decodelabs/elementary/tree/v0.5.0"
+                "source": "https://github.com/decodelabs/elementary/tree/v0.5.1"
             },
-            "time": "2025-04-02T11:48:52+00:00"
+            "time": "2025-04-02T21:54:57+00:00"
         },
         {
             "name": "decodelabs/enlighten",
@@ -1461,22 +1461,22 @@
         },
         {
             "name": "decodelabs/harvest",
-            "version": "v0.4.6",
+            "version": "v0.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/harvest.git",
-                "reference": "f996999de8b772d8c2ca881f7a381791644db72b"
+                "reference": "b318e420975d96fb28127996423346e0ab35f375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/f996999de8b772d8c2ca881f7a381791644db72b",
-                "reference": "f996999de8b772d8c2ca881f7a381791644db72b",
+                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/b318e420975d96fb28127996423346e0ab35f375",
+                "reference": "b318e420975d96fb28127996423346e0ab35f375",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/archetype": "^0.3.8",
                 "decodelabs/coercion": "^0.3",
-                "decodelabs/collections": "^0.10.2",
+                "decodelabs/collections": "^0.11",
                 "decodelabs/compass": "^0.3",
                 "decodelabs/deliverance": "^0.2.14",
                 "decodelabs/exceptional": "^0.5.3",
@@ -1502,7 +1502,7 @@
                 "decodelabs/pandora": "^0.3",
                 "decodelabs/phpstan-decodelabs": "^0.7",
                 "decodelabs/sanctum": "^0.3",
-                "decodelabs/tagged": "^0.16.4"
+                "decodelabs/tagged": "^0.19"
             },
             "suggest": {
                 "decodelabs/sanctum": "Content security policy support"
@@ -1534,9 +1534,9 @@
             "description": "PSR-15 HTTP stack without the mess",
             "support": {
                 "issues": "https://github.com/decodelabs/harvest/issues",
-                "source": "https://github.com/decodelabs/harvest/tree/v0.4.6"
+                "source": "https://github.com/decodelabs/harvest/tree/v0.4.7"
             },
-            "time": "2025-03-25T13:42:03+00:00"
+            "time": "2025-04-02T22:46:09+00:00"
         },
         {
             "name": "decodelabs/hatch",
@@ -1592,16 +1592,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "8de44467bae871482e6a1ef8b2bd860c58908eb6"
+                "reference": "72c6e1f55495017bae23c6c81851f5d5ea9bc1db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/8de44467bae871482e6a1ef8b2bd860c58908eb6",
-                "reference": "8de44467bae871482e6a1ef8b2bd860c58908eb6",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/72c6e1f55495017bae23c6c81851f5d5ea9bc1db",
+                "reference": "72c6e1f55495017bae23c6c81851f5d5ea9bc1db",
                 "shasum": ""
             },
             "require": {
@@ -1620,7 +1620,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.2.x-dev"
+                    "dev-develop": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -1643,9 +1643,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.3.0"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.3.1"
             },
-            "time": "2025-04-02T12:36:13+00:00"
+            "time": "2025-04-02T23:03:52+00:00"
         },
         {
             "name": "decodelabs/iota",
@@ -1965,21 +1965,21 @@
         },
         {
             "name": "decodelabs/singularity",
-            "version": "v0.3.2",
+            "version": "v0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/singularity.git",
-                "reference": "29d22946fde9dc3b4223fdb610d289d666a82eb7"
+                "reference": "9cbe2af6cad07186c40bbeb3a0f318ba0c28e99f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/singularity/zipball/29d22946fde9dc3b4223fdb610d289d666a82eb7",
-                "reference": "29d22946fde9dc3b4223fdb610d289d666a82eb7",
+                "url": "https://api.github.com/repos/decodelabs/singularity/zipball/9cbe2af6cad07186c40bbeb3a0f318ba0c28e99f",
+                "reference": "9cbe2af6cad07186c40bbeb3a0f318ba0c28e99f",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/archetype": "^0.3.8",
-                "decodelabs/collections": "^0.10.1",
+                "decodelabs/collections": "^0.11",
                 "decodelabs/compass": "^0.3",
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/glitch-support": "^0.5.1",
@@ -2014,9 +2014,9 @@
             "description": "Consolidated URI parsing and resolving",
             "support": {
                 "issues": "https://github.com/decodelabs/singularity/issues",
-                "source": "https://github.com/decodelabs/singularity/tree/v0.3.2"
+                "source": "https://github.com/decodelabs/singularity/tree/v0.3.3"
             },
-            "time": "2025-03-25T16:55:40+00:00"
+            "time": "2025-04-02T22:04:58+00:00"
         },
         {
             "name": "decodelabs/slingshot",
@@ -2136,22 +2136,22 @@
         },
         {
             "name": "decodelabs/tagged",
-            "version": "v0.19.0",
+            "version": "v0.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/tagged.git",
-                "reference": "0aa4dfe39e907a4ecab04a7dee74ddc533c9e49d"
+                "reference": "74fe9aa68c83d52109b21ae6ea0fa79a1e74cb07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/0aa4dfe39e907a4ecab04a7dee74ddc533c9e49d",
-                "reference": "0aa4dfe39e907a4ecab04a7dee74ddc533c9e49d",
+                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/74fe9aa68c83d52109b21ae6ea0fa79a1e74cb07",
+                "reference": "74fe9aa68c83d52109b21ae6ea0fa79a1e74cb07",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/archetype": "^0.3.8",
                 "decodelabs/coercion": "^0.3",
-                "decodelabs/collections": "^0.10.4",
+                "decodelabs/collections": "^0.11",
                 "decodelabs/cosmos": "^0.2.1",
                 "decodelabs/elementary": "^0.5",
                 "decodelabs/exceptional": "^0.5.3",
@@ -2180,7 +2180,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-develop": "0.18.x-dev"
+                    "dev-develop": "0.19.x-dev"
                 }
             },
             "autoload": {
@@ -2210,9 +2210,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/tagged/issues",
-                "source": "https://github.com/decodelabs/tagged/tree/v0.19.0"
+                "source": "https://github.com/decodelabs/tagged/tree/v0.19.1"
             },
-            "time": "2025-04-02T11:58:46+00:00"
+            "time": "2025-04-02T22:44:20+00:00"
         },
         {
             "name": "decodelabs/terminus",
@@ -2527,23 +2527,23 @@
         },
         {
             "name": "decodelabs/zest",
-            "version": "v0.5.0",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/zest.git",
-                "reference": "ac23351b8835d34cb07c79ba0ac43015247b11ca"
+                "reference": "c9e4e32db70329f5b008080104751363f002bf19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/zest/zipball/ac23351b8835d34cb07c79ba0ac43015247b11ca",
-                "reference": "ac23351b8835d34cb07c79ba0ac43015247b11ca",
+                "url": "https://api.github.com/repos/decodelabs/zest/zipball/c9e4e32db70329f5b008080104751363f002bf19",
+                "reference": "c9e4e32db70329f5b008080104751363f002bf19",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/archetype": "^0.3.8",
                 "decodelabs/clip": "^0.3.16",
                 "decodelabs/coercion": "^0.3",
-                "decodelabs/collections": "^0.10.1",
+                "decodelabs/collections": "^0.11",
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/genesis": "^0.11",
                 "decodelabs/iota": "^0.2",
@@ -2591,9 +2591,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/zest/issues",
-                "source": "https://github.com/decodelabs/zest/tree/v0.5.0"
+                "source": "https://github.com/decodelabs/zest/tree/v0.5.1"
             },
-            "time": "2025-03-11T10:27:15+00:00"
+            "time": "2025-04-02T22:47:39+00:00"
         },
         {
             "name": "graham-campbell/result-type",

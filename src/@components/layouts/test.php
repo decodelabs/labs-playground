@@ -3,7 +3,7 @@
 use DecodeLabs\Genesis;
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
-use DecodeLabs\Tagged\Element;
+use DecodeLabs\Tagged\Element as El;
 use DecodeLabs\Zest\Manifest;
 
 /**
@@ -35,16 +35,11 @@ return function(
 
     yield Html::header(function() {
         yield Html::nav(function() {
-            yield Html::{'a'}('Home', [
-                'href' => '/'
-            ]);
-
-            yield Html::{'a'}('Island content', [
-                'href' => '/island-content'
-            ]);
+            yield Html::{'a'}('Home', href: '/');
+            yield Html::{'a'}('Island content', href: '/island-content');
         });
 
-        yield Html::{'component-island[name=AnotherThing]'}(function (Element $el) {
+        yield Html::{'component-island[name=AnotherThing]'}(function (El $el) {
             yield Html::div('Fallback content');
 
             $el->setAttribute('props', json_encode([
