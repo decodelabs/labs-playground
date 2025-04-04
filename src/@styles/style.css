@@ -29,3 +29,11 @@ page-island {
     border: 2px solid red;
     padding: 1em;
 }
+
+nav.main {
+    display: flex;
+    gap: 1em;
+    border: 2px solid blue;
+    padding: 1em;
+    margin-bottom: 1em;
+}

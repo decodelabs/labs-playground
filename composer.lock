@@ -1461,16 +1461,16 @@
         },
         {
             "name": "decodelabs/harvest",
-            "version": "v0.4.7",
+            "version": "v0.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/harvest.git",
-                "reference": "b318e420975d96fb28127996423346e0ab35f375"
+                "reference": "7a51d884e912d5ec4da7241accc99374b276f396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/b318e420975d96fb28127996423346e0ab35f375",
-                "reference": "b318e420975d96fb28127996423346e0ab35f375",
+                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/7a51d884e912d5ec4da7241accc99374b276f396",
+                "reference": "7a51d884e912d5ec4da7241accc99374b276f396",
                 "shasum": ""
             },
             "require": {
@@ -1534,9 +1534,9 @@
             "description": "PSR-15 HTTP stack without the mess",
             "support": {
                 "issues": "https://github.com/decodelabs/harvest/issues",
-                "source": "https://github.com/decodelabs/harvest/tree/v0.4.7"
+                "source": "https://github.com/decodelabs/harvest/tree/v0.4.8"
             },
-            "time": "2025-04-02T22:46:09+00:00"
+            "time": "2025-04-04T21:49:27+00:00"
         },
         {
             "name": "decodelabs/hatch",

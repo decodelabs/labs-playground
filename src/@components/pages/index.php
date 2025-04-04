@@ -2,7 +2,6 @@
 
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
-use DecodeLabs\Tagged\Element as El;
 
 /**
  * @var Page $this

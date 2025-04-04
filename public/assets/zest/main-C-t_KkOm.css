@@ -1,1 +1,0 @@
-@view-transition{navigation: auto;}fragment-island{display:block;background:gray}fragment-island:state(mounted){background:#90ee90}component-island{display:block;background:gray}component-island:state(mounted){background:#add8e6}component-island[src=MyThing]{background:#f08080}page-island{display:block;border:2px solid red;padding:1em}

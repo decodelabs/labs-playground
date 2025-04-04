@@ -28,10 +28,9 @@ return function(
         yield Html::header(function() {
             yield Html::h1('Test layout');
 
-            yield Html::nav(function() {
-                yield Html::{'a'}('Home', href: '/');
-                yield Html::{'a'}('Island content', href: '/page2');
-            });
+            yield Html::{'@fragment'}(
+                fragment: '@components/fragments/navbar'
+            );
 
             yield Html::{'component-island'}(
                 name: 'AnotherThing',
