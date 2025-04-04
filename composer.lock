@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6d2b9fad41741d4b912da3f4585218d",
+    "content-hash": "6c274193b1b694e5ca31ef1ad3131999",
     "packages": [
         {
             "name": "brick/math",
@@ -1592,19 +1592,20 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.3.1",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "72c6e1f55495017bae23c6c81851f5d5ea9bc1db"
+                "reference": "4db27f2dc9fbe8d1552c41e2ff99b6a770008266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/72c6e1f55495017bae23c6c81851f5d5ea9bc1db",
-                "reference": "72c6e1f55495017bae23c6c81851f5d5ea9bc1db",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/4db27f2dc9fbe8d1552c41e2ff99b6a770008266",
+                "reference": "4db27f2dc9fbe8d1552c41e2ff99b6a770008266",
                 "shasum": ""
             },
             "require": {
+                "decodelabs/archetype": "^0.3.8",
                 "decodelabs/coercion": "^0.3.1",
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/slingshot": "^0.1.13",
@@ -1620,7 +1621,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.3.x-dev"
+                    "dev-develop": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -1643,9 +1644,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.3.1"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.4.0"
             },
-            "time": "2025-04-02T23:03:52+00:00"
+            "time": "2025-04-03T16:57:24+00:00"
         },
         {
             "name": "decodelabs/iota",
@@ -2136,16 +2137,16 @@
         },
         {
             "name": "decodelabs/tagged",
-            "version": "v0.19.1",
+            "version": "v0.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/tagged.git",
-                "reference": "74fe9aa68c83d52109b21ae6ea0fa79a1e74cb07"
+                "reference": "1f14c8aaaef6d38196c58fe44dba5829ad6959bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/74fe9aa68c83d52109b21ae6ea0fa79a1e74cb07",
-                "reference": "74fe9aa68c83d52109b21ae6ea0fa79a1e74cb07",
+                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/1f14c8aaaef6d38196c58fe44dba5829ad6959bf",
+                "reference": "1f14c8aaaef6d38196c58fe44dba5829ad6959bf",
                 "shasum": ""
             },
             "require": {
@@ -2210,9 +2211,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/tagged/issues",
-                "source": "https://github.com/decodelabs/tagged/tree/v0.19.1"
+                "source": "https://github.com/decodelabs/tagged/tree/v0.19.2"
             },
-            "time": "2025-04-02T22:44:20+00:00"
+            "time": "2025-04-03T17:12:26+00:00"
         },
         {
             "name": "decodelabs/terminus",
@@ -2527,16 +2528,16 @@
         },
         {
             "name": "decodelabs/zest",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/zest.git",
-                "reference": "c9e4e32db70329f5b008080104751363f002bf19"
+                "reference": "d58f96c2971cb614573a8d1fc2eff0e05a0ffd37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/zest/zipball/c9e4e32db70329f5b008080104751363f002bf19",
-                "reference": "c9e4e32db70329f5b008080104751363f002bf19",
+                "url": "https://api.github.com/repos/decodelabs/zest/zipball/d58f96c2971cb614573a8d1fc2eff0e05a0ffd37",
+                "reference": "d58f96c2971cb614573a8d1fc2eff0e05a0ffd37",
                 "shasum": ""
             },
             "require": {
@@ -2556,6 +2557,7 @@
             },
             "require-dev": {
                 "decodelabs/harvest": "^0.4.2",
+                "decodelabs/horizon": "^0.4",
                 "decodelabs/phpstan-decodelabs": "^0.7",
                 "ext-pcntl": "*"
             },
@@ -2571,7 +2573,8 @@
             "autoload": {
                 "psr-4": {
                     "DecodeLabs\\Zest\\": "src/Zest/",
-                    "DecodeLabs\\Harvest\\": "src/Harvest/"
+                    "DecodeLabs\\Harvest\\": "src/Harvest/",
+                    "DecodeLabs\\Horizon\\": "src/Horizon/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2591,9 +2594,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/zest/issues",
-                "source": "https://github.com/decodelabs/zest/tree/v0.5.1"
+                "source": "https://github.com/decodelabs/zest/tree/v0.5.2"
             },
-            "time": "2025-04-02T22:47:39+00:00"
+            "time": "2025-04-03T16:59:37+00:00"
         },
         {
             "name": "graham-campbell/result-type",

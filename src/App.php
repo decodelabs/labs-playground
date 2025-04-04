@@ -37,6 +37,7 @@ class App extends Generic
 
     public function initializePlatform(): void
     {
-        Genesis::aliasPath('@components', Genesis::$hub->applicationPath . '/src/@components');
+        Genesis::aliasPath('@public', Genesis::$build->path . '/public');
+        Genesis::aliasPath('@components', Genesis::$build->path . '/src/@components');
     }
 }

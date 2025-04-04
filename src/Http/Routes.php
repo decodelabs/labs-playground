@@ -23,6 +23,9 @@ class Routes implements Generator
         yield Greenleaf::route('/', 'index')
             ->forMethod('get');
 
+        yield Greenleaf::route('page2')
+            ->forMethod('get');
+
         yield Greenleaf::route('island-content')
             ->forMethod('get');
     }

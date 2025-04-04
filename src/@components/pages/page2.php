@@ -2,34 +2,24 @@
 
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
-use DecodeLabs\Tagged\Element as El;
 
 /**
  * @var Page $this
  */
 
 return function() {
-    $this->title = 'Fabric Starter';
-
-    $this->setMetas(
-        description: 'This is a test page',
-        keywords: 'test, fabric, starter',
-    );
+    $this->title = 'Page 2';
 
     $this->layout = Html::{'@fragment'}(
-        fragment: '@components/layouts/default',
+        fragment: '@components/layouts/test',
     );
 
-    // Content
     yield Html::{'main'}(function () {
+        yield Html::h2('Page 2 content');
+
         yield Html::{'fragment-island'}(
             src:  '/island-content',
             content: Html::p('This is fallback content!')
-        );
-
-        yield Html::{'component-island'}(
-            name: 'MyThing',
-            content: Html::div('Fallback content!')
         );
 
         yield Html::{'component-island'}(
@@ -39,9 +29,8 @@ return function() {
         );
 
         yield Html::{'component-island'}(
-            name: 'AnotherReactThing',
-            props: ['says' => 'this is neat'],
-            content: Html::div('Fallback content')
+            name: 'MyThing',
+            content: Html::div('Fallback content!')
         );
     });
 };
