@@ -19,26 +19,10 @@ return function(
     yield Html::{'main'}(function () use($name) {
         yield Html::h1('Form test');
 
-        if($name) {
-            yield Html::p('Hello, '.$name);
-        }
-
-        yield Html::{'form'}(
-            method: 'POST',
+        yield Html::{'@fragment'}(
+            fragment: '@components/fragments/form',
             action: '/form',
-            content: function() use($name) {
-                yield Html::input(
-                    type: 'text',
-                    name: 'name',
-                    placeholder: 'Name',
-                    value: $name
-                );
-
-                yield Html::input(
-                    type: 'submit',
-                    value: 'Submit'
-                );
-            }
+            name: $name
         );
     });
 };

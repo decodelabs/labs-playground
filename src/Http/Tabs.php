@@ -9,17 +9,18 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Playground\Http;
 
+use DecodeLabs\Horizon\Request;
 use DecodeLabs\Greenleaf\Action;
 use DecodeLabs\Greenleaf\Action\ByMethodTrait;
 use DecodeLabs\Horizon\Page;
 
-class IslandContent implements Action
+class Tabs implements Action
 {
     use ByMethodTrait;
 
     public function get(): Page {
         return Page::fromFragment(
-            fragment: '@components/fragments/island-content',
+            fragment: '@components/pages/tabs',
         );
     }
 }

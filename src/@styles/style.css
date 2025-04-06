@@ -37,3 +37,15 @@ nav.main {
     padding: 1em;
     margin-bottom: 1em;
 }
+
+nav.tabs {
+    padding: 1em 0.5em 0;
+    display: flex;
+    gap: 1em;
+    background: lightgrey;
+
+    a {
+        background: white;
+        padding: 0.5em;
+    }
+}

@@ -18,7 +18,7 @@ return function() {
         yield Html::h2('Page 2 content');
 
         yield Html::{'fragment-island'}(
-            src:  '/island-content',
+            src:  '/fragments/island-content',
             content: Html::p('This is fallback content!')
         );
 

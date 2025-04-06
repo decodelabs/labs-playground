@@ -22,7 +22,7 @@ return function() {
     // Content
     yield Html::{'main'}(function () {
         yield Html::{'fragment-island'}(
-            src:  '/island-content',
+            src:  '/fragments/island-content',
             content: Html::p('This is fallback content!')
         );
 

@@ -24,23 +24,25 @@ return function(
         href: '/favicon.ico'
     );
 
-    yield Html::header(function() {
-        yield Html::h1('Hello, world!');
+    yield Html::{'layout-island[name=default]'}(function () use($content) {
+        yield Html::header(function() {
+            yield Html::h1('Hello, world!');
 
-        yield Html::{'@fragment'}(
-            fragment: '@components/fragments/navbar'
-        );
+            yield Html::{'@fragment'}(
+                fragment: '@components/fragments/navbar'
+            );
 
-        yield Html::{'component-island'}(
-            name: 'AnotherThing',
-            props: [
-                'action' => 'rocks'
-            ],
-            content: Html::div('Fallback content')
-        );
+            yield Html::{'component-island'}(
+                name: 'AnotherThing',
+                props: [
+                    'action' => 'rocks'
+                ],
+                content: Html::div('Fallback content')
+            );
+        });
+
+        yield Html::{'page-island'}($content);
+
+        yield Html::footer('FOOTER');
     });
-
-    yield Html::{'page-island'}($content);
-
-    yield Html::footer('FOOTER');
 };

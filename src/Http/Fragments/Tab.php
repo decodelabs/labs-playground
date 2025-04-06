@@ -7,31 +7,36 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Playground\Http;
+namespace DecodeLabs\Playground\Http\Fragments;
 
 use DecodeLabs\Greenleaf\Action;
 use DecodeLabs\Greenleaf\Action\ByMethodTrait;
 use DecodeLabs\Harvest\Request;
 use DecodeLabs\Horizon\Page;
 
-class Form implements Action
+class Tab implements Action
 {
     use ByMethodTrait;
 
-    public function get(): Page {
+    public function get(
+        string $tab = '1'
+    ): Page {
         return Page::fromFragment(
-            fragment: '@components/pages/form',
+            fragment: '@components/fragments/tab',
+            tab: $tab,
         );
     }
 
     public function post(
-        Request $request
+        Request $request,
+        string $tab = '1'
     ): Page {
         $data = $request->getFormData();
         $name = $data->name->as('string');
 
         return Page::fromFragment(
-            fragment: '@components/pages/form',
+            fragment: '@components/fragments/tab',
+            tab: $tab,
             name: $name,
         );
     }

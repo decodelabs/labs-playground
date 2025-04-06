@@ -29,7 +29,16 @@ class Routes implements Generator
         yield Greenleaf::route('form')
             ->forMethod('get', 'post');
 
-        yield Greenleaf::route('island-content')
+        yield Greenleaf::route('tabs')
             ->forMethod('get');
+
+
+        // Fragments
+        yield Greenleaf::route('fragments/island-content')
+            ->forMethod('get');
+
+        yield Greenleaf::route('fragments/tab/{tab}', 'fragments/tab')
+            ->forMethod('get', 'post')
+            ->with('tab');
     }
 }
