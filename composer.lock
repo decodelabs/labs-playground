@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c274193b1b694e5ca31ef1ad3131999",
+    "content-hash": "74b48fe70d509476f31fecad744eac98",
     "packages": [
         {
             "name": "brick/math",
@@ -256,52 +256,6 @@
                 "source": "https://github.com/decodelabs/atlas/tree/v0.12.4"
             },
             "time": "2025-02-20T14:14:17+00:00"
-        },
-        {
-            "name": "decodelabs/castaway",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:decodelabs/castaway.git",
-                "reference": "035ec14ef8631ae6bbe158cfa02d2b627b41efbe"
-            },
-            "require": {
-                "decodelabs/exceptional": "^0.5.3",
-                "decodelabs/harvest": "^0.4.1",
-                "decodelabs/tagged": "^0.19",
-                "decodelabs/veneer": "^0.12.6",
-                "decodelabs/zest": "^0.5",
-                "php": "^8.4"
-            },
-            "require-dev": {
-                "decodelabs/phpstan-decodelabs": "^0.7.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DecodeLabs\\Castaway\\": "src/Castaway/"
-                },
-                "files": [
-                    "src/Castaway/Context.php"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tom Wright",
-                    "email": "tom@inflatablecookie.com"
-                }
-            ],
-            "description": "Front end component islands architecture",
-            "time": "2025-04-02T12:02:19+00:00"
         },
         {
             "name": "decodelabs/clip",
@@ -4169,9 +4123,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "decodelabs/castaway": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -16,7 +16,6 @@
     },
     "require": {
         "php": "^8.4",
-        "decodelabs/castaway": "^0.1.0@dev",
         "decodelabs/exceptional": "^0.5.3",
         "decodelabs/fabric": "^0.5.3",
         "decodelabs/greenleaf": "^0.6",
