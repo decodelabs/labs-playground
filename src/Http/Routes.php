@@ -23,11 +23,14 @@ class Routes implements Generator
         yield Greenleaf::route('/', 'index')
             ->forMethod('get');
 
-        yield Greenleaf::route('page2')
+        yield Greenleaf::route('propagate')
             ->forMethod('get');
 
         yield Greenleaf::route('form')
             ->forMethod('get', 'post');
+
+        yield Greenleaf::route('slow')
+            ->forMethod('get');
 
         yield Greenleaf::route('tabs')
             ->forMethod('get');

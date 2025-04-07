@@ -1,7 +1,3 @@
-@view-transition {
-    navigation: auto;
-}
-
 fragment-island {
     display: block;
     background: grey;
@@ -30,6 +26,11 @@ page-island {
     padding: 1em;
 }
 
+*:state(loading) {
+    cursor: wait;
+    background: lightyellow;
+}
+
 nav.main {
     display: flex;
     gap: 1em;
@@ -48,4 +49,8 @@ nav.tabs {
         background: white;
         padding: 0.5em;
     }
+}
+
+a.target-loading {
+    background: yellow !important;
 }

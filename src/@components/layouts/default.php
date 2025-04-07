@@ -37,12 +37,13 @@ return function(
                 props: [
                     'action' => 'rocks'
                 ],
+                propagate: true,
                 content: Html::div('Fallback content')
             );
         });
 
         yield Html::{'page-island'}($content);
-
+        yield Html::{'template#page-load'}('Loading...');
         yield Html::footer('FOOTER');
     });
 };

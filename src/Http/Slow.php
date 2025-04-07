@@ -14,13 +14,13 @@ use DecodeLabs\Greenleaf\Action;
 use DecodeLabs\Greenleaf\Action\ByMethodTrait;
 use DecodeLabs\Horizon\Page;
 
-class Page2 implements Action
+class Slow implements Action
 {
     use ByMethodTrait;
 
     public function get(): Page {
         return Page::fromFragment(
-            fragment: '@components/pages/page2',
+            fragment: '@components/pages/slow',
         );
     }
 }

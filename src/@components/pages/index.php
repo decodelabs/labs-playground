@@ -21,6 +21,8 @@ return function() {
 
     // Content
     yield Html::{'main'}(function () {
+        yield Html::h2('Welcome to Fabric Starter');
+
         yield Html::{'fragment-island'}(
             src:  '/fragments/island-content',
             content: Html::p('This is fallback content!')
@@ -34,6 +36,7 @@ return function() {
         yield Html::{'component-island'}(
             name: 'ReactThing',
             props: ['test' => 'test'],
+            propagate: true,
             content: Html::div('Fallback content')
         );
 

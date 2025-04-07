@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export const ReactThing = ({ test }) => {
+export function ReactThing({ test }) {
+
+    // Add a counter to the component
+    const [count, setCount] = useState(0);
+
     return (
         <div>
-            <p>React Thing: {test}</p>
+            <p onClick={() => setCount(count + 1)}>React Thing: {test}</p>
+            <p>Count: {count}</p>
         </div>
     );
 }
 
-export const AnotherReactThing = ({ says }) => {
+export function AnotherReactThing({ says }) {
     return (
         <div>
             <p>Another React Thing says: {says}</p>

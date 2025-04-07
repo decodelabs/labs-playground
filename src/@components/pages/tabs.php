@@ -11,7 +11,7 @@ return function() {
     $this->title = 'Tabs test';
 
     $this->layout = Html::{'@fragment'}(
-        fragment: '@components/layouts/default',
+        fragment: '@components/layouts/test',
     );
 
     yield Html::{'main'}(function () {

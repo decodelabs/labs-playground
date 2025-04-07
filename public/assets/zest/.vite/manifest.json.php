@@ -7,11 +7,11 @@ use DecodeLabs\Zest\Manifest;
 /* Auto-generated Zest manifest cache file */
 return (new Manifest(__DIR__ . '/manifest.json', false))
     ->addBodyJs([
-        '/assets/zest/main-D4Op1spd.js' => [
+        '/assets/zest/main-DYUZFy11.js' => [
             'type' => 'module',
         ],
     ])
     ->addCss([
-        '/assets/zest/main-Mg035P6M.css' => [],
+        '/assets/zest/main-C68kO3-w.css' => [],
     ])
 ;

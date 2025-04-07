@@ -8,14 +8,14 @@ use DecodeLabs\Tagged as Html;
  */
 
 return function() {
-    $this->title = 'Page 2';
+    $this->title = 'Propagate test';
 
     $this->layout = Html::{'@fragment'}(
         fragment: '@components/layouts/test',
     );
 
     yield Html::{'main'}(function () {
-        yield Html::h2('Page 2 content');
+        yield Html::h2('Components propagation test');
 
         yield Html::{'fragment-island'}(
             src:  '/fragments/island-content',
@@ -24,7 +24,8 @@ return function() {
 
         yield Html::{'component-island'}(
             name: 'ReactThing',
-            props: ['test' => 'test'],
+            props: ['test' => 'a different value'],
+            propagate: true,
             content: Html::div('Fallback content')
         );
 
