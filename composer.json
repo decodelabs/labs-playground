@@ -8,12 +8,6 @@
             "name": "Tom Wright",
             "email": "tom@inflatablecookie.com"
         } ],
-    "repositories": {
-        "castaway": {
-            "url": "git@github.com:decodelabs/castaway.git",
-            "type": "git"
-        }
-    },
     "require": {
         "php": "^8.4",
         "decodelabs/exceptional": "^0.5.3",
