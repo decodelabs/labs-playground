@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7baaa874cb8d76580a1de469b4497a94",
+    "content-hash": "cb8aa693722f151bd9b7ff00305ac792",
     "packages": [
         {
             "name": "brick/math",
@@ -2482,16 +2482,16 @@
         },
         {
             "name": "decodelabs/zest",
-            "version": "v0.5.2",
+            "version": "v0.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/zest.git",
-                "reference": "d58f96c2971cb614573a8d1fc2eff0e05a0ffd37"
+                "reference": "68e300b8bae63ab4ef5bb9397cca3ae7da8387fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/zest/zipball/d58f96c2971cb614573a8d1fc2eff0e05a0ffd37",
-                "reference": "d58f96c2971cb614573a8d1fc2eff0e05a0ffd37",
+                "url": "https://api.github.com/repos/decodelabs/zest/zipball/68e300b8bae63ab4ef5bb9397cca3ae7da8387fe",
+                "reference": "68e300b8bae63ab4ef5bb9397cca3ae7da8387fe",
                 "shasum": ""
             },
             "require": {
@@ -2548,9 +2548,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/zest/issues",
-                "source": "https://github.com/decodelabs/zest/tree/v0.5.2"
+                "source": "https://github.com/decodelabs/zest/tree/v0.5.3"
             },
-            "time": "2025-04-03T16:59:37+00:00"
+            "time": "2025-04-08T07:48:19+00:00"
         },
         {
             "name": "graham-campbell/result-type",
