@@ -11,6 +11,7 @@ namespace DecodeLabs\Playground;
 
 use DecodeLabs\Fabric\App\Generic;
 use DecodeLabs\Genesis;
+use DecodeLabs\Monarch;
 
 class App extends Generic
 {
@@ -37,7 +38,7 @@ class App extends Generic
 
     public function initializePlatform(): void
     {
-        Genesis::aliasPath('@public', Genesis::$build->path . '/public');
-        Genesis::aliasPath('@components', Genesis::$build->path . '/src/@components');
+        Monarch::$paths->alias('@public', '@run/public');
+        Monarch::$paths->alias('@components', '@run/src/@components');
     }
 }
