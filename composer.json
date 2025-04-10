@@ -28,7 +28,7 @@
     },
     "extra": {
         "effigy": {
-            "entry": "vendor/decodelabs/fabric/src/Bootstrap.php",
+            "entry": "src/Bootstrap.php",
             "codeDirs": [
                 "config",
                 "src"
