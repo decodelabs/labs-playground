@@ -1,4 +1,5 @@
 /vendor
+/data
 node_modules
 composer.phar
 .DS_Store

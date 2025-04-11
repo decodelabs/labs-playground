@@ -1,5 +1,6 @@
 <?php
 
+use DecodeLabs\Harvest\Request;
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
 
@@ -8,13 +9,16 @@ use DecodeLabs\Tagged as Html;
  */
 
 return function(
-    ?string $name = null
+    Request $request
 ) {
     $this->title = 'Form test';
 
     $this->layout = Html::{'@fragment'}(
         fragment: '@components/layouts/default',
     );
+
+    $data = $request->getFormData();
+    $name = $data->name->as('?string');
 
     yield Html::{'main'}(function () use($name) {
         yield Html::h1('Form test');

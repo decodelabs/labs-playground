@@ -19,28 +19,30 @@ class Routes implements Generator
 
     public function generateRoutes(): iterable
     {
+        Greenleaf::setDefaultPageType('php');
+
         // Home
-        yield Greenleaf::route('/', 'index')
+        yield Greenleaf::page('/', 'index.php')
             ->forMethod('get');
 
-        yield Greenleaf::route('propagate')
+        yield Greenleaf::page('propagate')
             ->forMethod('get');
 
-        yield Greenleaf::route('form')
+        yield Greenleaf::page('form')
             ->forMethod('get', 'post');
 
-        yield Greenleaf::route('slow')
+        yield Greenleaf::page('slow')
             ->forMethod('get');
 
-        yield Greenleaf::route('tabs')
+        yield Greenleaf::page('tabs')
             ->forMethod('get');
 
 
         // Fragments
-        yield Greenleaf::route('fragments/island-content')
+        yield Greenleaf::action('fragments/island-content')
             ->forMethod('get');
 
-        yield Greenleaf::route('fragments/tab/{tab}', 'fragments/tab')
+        yield Greenleaf::action('fragments/tab/{tab}', 'fragments/tab')
             ->forMethod('get', 'post')
             ->with('tab');
     }
