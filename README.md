@@ -9,9 +9,7 @@
 
 ### Example playground app for testing DecodeLabs features
 
-Labs Playground provides ...
-
-_Get news and updates on the [DecodeLabs blog](https://blog.decodelabs.com)._
+Try out and play with a working Fabric app.
 
 ---
 
