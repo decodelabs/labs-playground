@@ -1,0 +1,137 @@
+<?php
+return [
+    [
+        'target' => 'leaf:/complex-route.php',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/test/{part1}/test-{part2}/',
+        'methods' => [
+            'GET'
+        ],
+        'parameters' => [
+            'part1' => [
+                'name' => 'part1',
+                'validate' => null,
+                'default' => null
+            ],
+            'part2' => [
+                'name' => 'part2',
+                'validate' => null,
+                'default' => null
+            ]
+        ]
+    ],
+    [
+        'target' => 'leaf:/fragments/tab',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Action',
+        'pattern' => '/fragments/tab/{tab}',
+        'methods' => [
+            'GET',
+            'POST'
+        ],
+        'parameters' => [
+            'tab' => [
+                'name' => 'tab',
+                'validate' => null,
+                'default' => null
+            ]
+        ]
+    ],
+    [
+        'target' => 'leaf:/complex-route.php',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/test/{part1}',
+        'methods' => [
+            'GET'
+        ],
+        'parameters' => [
+            'part1' => [
+                'name' => 'part1',
+                'validate' => [
+                    'as' => 'Path'
+                ],
+                'default' => null
+            ],
+            'part2' => [
+                'name' => 'part2',
+                'validate' => null,
+                'default' => 'default'
+            ]
+        ]
+    ],
+    [
+        'target' => 'leaf:/fragments/island-content',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Action',
+        'pattern' => '/fragments/island-content',
+        'methods' => [
+            'GET'
+        ]
+    ],
+    [
+        'target' => 'leaf:/complex-route.php?linear',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/test-{part1}-{part2}',
+        'methods' => [
+            'GET'
+        ],
+        'parameters' => [
+            'part1' => [
+                'name' => 'part1',
+                'validate' => null,
+                'default' => null
+            ],
+            'part2' => [
+                'name' => 'part2',
+                'validate' => null,
+                'default' => null
+            ]
+        ]
+    ],
+    [
+        'target' => 'leaf:/tabs.php',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/tabs',
+        'methods' => [
+            'GET'
+        ]
+    ],
+    [
+        'target' => 'leaf:/slow.php',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/slow',
+        'methods' => [
+            'GET'
+        ]
+    ],
+    [
+        'target' => 'leaf:/propagate.php',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/propagate',
+        'methods' => [
+            'GET'
+        ]
+    ],
+    [
+        'target' => 'leaf:/form.php',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/form',
+        'methods' => [
+            'GET',
+            'POST'
+        ]
+    ],
+    [
+        'target' => 'leaf:/index.php',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
+        'pattern' => '/',
+        'methods' => [
+            'GET'
+        ],
+        'parameters' => [
+            'test' => [
+                'name' => 'test',
+                'validate' => null,
+                'default' => 'hello'
+            ]
+        ]
+    ]
+];

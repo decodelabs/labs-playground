@@ -1,5 +1,6 @@
 <?php
 
+use DecodeLabs\Greenleaf\Route\Page as Route;
 use DecodeLabs\Harvest\Request;
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
@@ -8,7 +9,9 @@ use DecodeLabs\Tagged as Html;
  * @var Page $this
  */
 
-return function(
+return
+#[Route('form', method: ['GET', 'POST'])]
+function(
     Request $request
 ) {
     $this->title = 'Form test';

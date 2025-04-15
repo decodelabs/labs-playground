@@ -11,17 +11,15 @@ namespace DecodeLabs\Playground\Http;
 
 use DecodeLabs\Greenleaf;
 use DecodeLabs\Greenleaf\Generator;
-use DecodeLabs\Greenleaf\GeneratorTrait;
 
 class Routes implements Generator
 {
-    use GeneratorTrait;
-
     public function generateRoutes(): iterable
     {
         Greenleaf::setDefaultPageType('php');
 
         // Home
+        /*
         yield Greenleaf::page('/', 'index.php')
             ->forMethod('get');
 
@@ -36,6 +34,7 @@ class Routes implements Generator
 
         yield Greenleaf::page('tabs')
             ->forMethod('get');
+            */
 
 
         // Fragments

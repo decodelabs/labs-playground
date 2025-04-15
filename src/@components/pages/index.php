@@ -1,5 +1,7 @@
 <?php
 
+use DecodeLabs\Greenleaf\Route\Parameter;
+use DecodeLabs\Greenleaf\Route\Page as Route;
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
 
@@ -7,7 +9,13 @@ use DecodeLabs\Tagged as Html;
  * @var Page $this
  */
 
-return function() {
+return
+#[Route('/', 'index', parameters: [
+    new Parameter('test', default: 'hello')
+])]
+function(
+    string $test
+) {
     $this->title = 'Fabric Starter';
 
     $this->setMetas(
@@ -20,8 +28,10 @@ return function() {
     );
 
     // Content
-    yield Html::{'main'}(function () {
+    yield Html::{'main'}(function () use($test) {
         yield Html::h2('Welcome to Fabric Starter');
+
+        yield Html::p('Param: '.$test);
 
         yield Html::{'fragment-island'}(
             src:  '/fragments/island-content',

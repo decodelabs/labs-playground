@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba50e37314b307094c55a2270ac2d5f2",
+    "content-hash": "aa6ef2b62508e27b1634a2d9f6d05dc6",
     "packages": [
         {
             "name": "brick/math",
@@ -137,22 +137,22 @@
         },
         {
             "name": "decodelabs/archetype",
-            "version": "v0.3.8",
+            "version": "v0.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/archetype.git",
-                "reference": "a57f7f37dceefb2b098d21fef95ec643e0c47a9a"
+                "reference": "7d18513105ac7082c56adde4972011e944a736ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/archetype/zipball/a57f7f37dceefb2b098d21fef95ec643e0c47a9a",
-                "reference": "a57f7f37dceefb2b098d21fef95ec643e0c47a9a",
+                "url": "https://api.github.com/repos/decodelabs/archetype/zipball/7d18513105ac7082c56adde4972011e944a736ff",
+                "reference": "7d18513105ac7082c56adde4972011e944a736ff",
                 "shasum": ""
             },
             "require": {
-                "decodelabs/exceptional": "^0.5",
-                "decodelabs/glitch-support": "^0.5",
-                "decodelabs/veneer": "^0.12.1",
+                "decodelabs/exceptional": "^0.5.2",
+                "decodelabs/glitch-support": "^0.5.1",
+                "decodelabs/veneer": "^0.12.2",
                 "php": "^8.4"
             },
             "require-dev": {
@@ -190,9 +190,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/archetype/issues",
-                "source": "https://github.com/decodelabs/archetype/tree/v0.3.8"
+                "source": "https://github.com/decodelabs/archetype/tree/v0.3.9"
             },
-            "time": "2025-02-12T22:04:40+00:00"
+            "time": "2025-04-14T11:29:59+00:00"
         },
         {
             "name": "decodelabs/atlas",
@@ -1028,16 +1028,16 @@
         },
         {
             "name": "decodelabs/fabric",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/fabric.git",
-                "reference": "c8a4d2de9dca33ff827e77c055914cba707ff3a1"
+                "reference": "f25c08f56b469ef4a1bdec24ba5a97f01dfa8573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/c8a4d2de9dca33ff827e77c055914cba707ff3a1",
-                "reference": "c8a4d2de9dca33ff827e77c055914cba707ff3a1",
+                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/f25c08f56b469ef4a1bdec24ba5a97f01dfa8573",
+                "reference": "f25c08f56b469ef4a1bdec24ba5a97f01dfa8573",
                 "shasum": ""
             },
             "require": {
@@ -1048,7 +1048,7 @@
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/genesis": "^0.12.1",
                 "decodelabs/glitch": "^0.19.4",
-                "decodelabs/greenleaf": "^0.6",
+                "decodelabs/greenleaf": "^0.7",
                 "decodelabs/harvest": "^0.4.5",
                 "decodelabs/lucid": "^0.5.1",
                 "decodelabs/monarch": "^0.1.1",
@@ -1088,9 +1088,9 @@
             "description": "Lightweight PHP framework implementation using DecodeLabs ecosystem",
             "support": {
                 "issues": "https://github.com/decodelabs/fabric/issues",
-                "source": "https://github.com/decodelabs/fabric/tree/v0.6.0"
+                "source": "https://github.com/decodelabs/fabric/tree/v0.6.1"
             },
-            "time": "2025-04-09T22:08:22+00:00"
+            "time": "2025-04-15T21:01:10+00:00"
         },
         {
             "name": "decodelabs/fluidity",
@@ -1348,25 +1348,27 @@
         },
         {
             "name": "decodelabs/greenleaf",
-            "version": "v0.6.2",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/greenleaf.git",
-                "reference": "e6b514d36a1b9b21247f3b6f9cb2a17923bc1f24"
+                "reference": "dd4b7e3617911a9c4d9c945c255f79819b2ffcf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/e6b514d36a1b9b21247f3b6f9cb2a17923bc1f24",
-                "reference": "e6b514d36a1b9b21247f3b6f9cb2a17923bc1f24",
+                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/dd4b7e3617911a9c4d9c945c255f79819b2ffcf6",
+                "reference": "dd4b7e3617911a9c4d9c945c255f79819b2ffcf6",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/archetype": "^0.3.8",
+                "decodelabs/atlas": "^0.12.4",
                 "decodelabs/coercion": "^0.3",
                 "decodelabs/dictum": "^0.6.9",
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/glitch-support": "^0.5.1",
                 "decodelabs/harvest": "^0.4.5",
+                "decodelabs/iota": "^0.2.1",
                 "decodelabs/monarch": "^0.1.1",
                 "decodelabs/singularity": "^0.3",
                 "decodelabs/slingshot": "^0.2",
@@ -1388,7 +1390,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.6.x-dev"
+                    "dev-develop": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -1417,9 +1419,9 @@
             "description": "Super-fast directory based HTTP router",
             "support": {
                 "issues": "https://github.com/decodelabs/greenleaf/issues",
-                "source": "https://github.com/decodelabs/greenleaf/tree/v0.6.2"
+                "source": "https://github.com/decodelabs/greenleaf/tree/v0.7.1"
             },
-            "time": "2025-04-11T15:39:36+00:00"
+            "time": "2025-04-15T21:09:49+00:00"
         },
         {
             "name": "decodelabs/harvest",
@@ -1554,16 +1556,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "65cab84ebea650b68dd4631244de82edf471c9f1"
+                "reference": "f506347800c062b62c4126c3f0491586f9a61b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/65cab84ebea650b68dd4631244de82edf471c9f1",
-                "reference": "65cab84ebea650b68dd4631244de82edf471c9f1",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/f506347800c062b62c4126c3f0491586f9a61b67",
+                "reference": "f506347800c062b62c4126c3f0491586f9a61b67",
                 "shasum": ""
             },
             "require": {
@@ -1575,8 +1577,11 @@
                 "decodelabs/tagged": "^0.19",
                 "php": "^8.4"
             },
+            "conflict": {
+                "decodelabs/greenleaf": "<0.7"
+            },
             "require-dev": {
-                "decodelabs/greenleaf": "^0.6.1",
+                "decodelabs/greenleaf": "^0.7",
                 "decodelabs/harvest": "^0.4.5",
                 "decodelabs/phpstan-decodelabs": "^0.7.0"
             },
@@ -1607,22 +1612,22 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.4.2"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.4.3"
             },
-            "time": "2025-04-11T15:41:15+00:00"
+            "time": "2025-04-15T20:51:05+00:00"
         },
         {
             "name": "decodelabs/iota",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/iota.git",
-                "reference": "171094898220f5e5a4415586f645438f410e6f0e"
+                "reference": "e6cc5c60eadb72112690ff074dc0a558af117142"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/iota/zipball/171094898220f5e5a4415586f645438f410e6f0e",
-                "reference": "171094898220f5e5a4415586f645438f410e6f0e",
+                "url": "https://api.github.com/repos/decodelabs/iota/zipball/e6cc5c60eadb72112690ff074dc0a558af117142",
+                "reference": "e6cc5c60eadb72112690ff074dc0a558af117142",
                 "shasum": ""
             },
             "require": {
@@ -1666,9 +1671,9 @@
             "description": "Discrete, dependable generated code repository",
             "support": {
                 "issues": "https://github.com/decodelabs/iota/issues",
-                "source": "https://github.com/decodelabs/iota/tree/v0.2.1"
+                "source": "https://github.com/decodelabs/iota/tree/v0.2.2"
             },
-            "time": "2025-04-09T21:24:04+00:00"
+            "time": "2025-04-15T11:24:00+00:00"
         },
         {
             "name": "decodelabs/lucid",
