@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa6ef2b62508e27b1634a2d9f6d05dc6",
+    "content-hash": "b9682e911ddc1161ca7c992091c4012f",
     "packages": [
         {
             "name": "brick/math",
@@ -739,16 +739,16 @@
         },
         {
             "name": "decodelabs/elementary",
-            "version": "v0.5.1",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/elementary.git",
-                "reference": "24be931713ffbee3331e173714f6ea421ee91abd"
+                "reference": "2c7294e54a08bdc0d4db162f0942aff087eac1e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/24be931713ffbee3331e173714f6ea421ee91abd",
-                "reference": "24be931713ffbee3331e173714f6ea421ee91abd",
+                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/2c7294e54a08bdc0d4db162f0942aff087eac1e0",
+                "reference": "2c7294e54a08bdc0d4db162f0942aff087eac1e0",
                 "shasum": ""
             },
             "require": {
@@ -764,7 +764,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.5.x-dev"
+                    "dev-develop": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -790,9 +790,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/elementary/issues",
-                "source": "https://github.com/decodelabs/elementary/tree/v0.5.1"
+                "source": "https://github.com/decodelabs/elementary/tree/v0.6.0"
             },
-            "time": "2025-04-02T21:54:57+00:00"
+            "time": "2025-04-25T07:44:40+00:00"
         },
         {
             "name": "decodelabs/enlighten",
@@ -1556,16 +1556,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.4.3",
+            "version": "v0.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "f506347800c062b62c4126c3f0491586f9a61b67"
+                "reference": "05e98d18e7978ab2efe48e485766316d44c611ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/f506347800c062b62c4126c3f0491586f9a61b67",
-                "reference": "f506347800c062b62c4126c3f0491586f9a61b67",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/05e98d18e7978ab2efe48e485766316d44c611ca",
+                "reference": "05e98d18e7978ab2efe48e485766316d44c611ca",
                 "shasum": ""
             },
             "require": {
@@ -1574,7 +1574,7 @@
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/monarch": "^0.1.1",
                 "decodelabs/slingshot": "^0.2",
-                "decodelabs/tagged": "^0.19",
+                "decodelabs/tagged": "^0.20",
                 "php": "^8.4"
             },
             "conflict": {
@@ -1612,9 +1612,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.4.3"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.4.4"
             },
-            "time": "2025-04-15T20:51:05+00:00"
+            "time": "2025-04-25T09:45:55+00:00"
         },
         {
             "name": "decodelabs/iota",
@@ -2162,16 +2162,16 @@
         },
         {
             "name": "decodelabs/tagged",
-            "version": "v0.19.2",
+            "version": "v0.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/tagged.git",
-                "reference": "1f14c8aaaef6d38196c58fe44dba5829ad6959bf"
+                "reference": "2b47b23b0dc4c795254d7a1518c4e039853b66f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/1f14c8aaaef6d38196c58fe44dba5829ad6959bf",
-                "reference": "1f14c8aaaef6d38196c58fe44dba5829ad6959bf",
+                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/2b47b23b0dc4c795254d7a1518c4e039853b66f2",
+                "reference": "2b47b23b0dc4c795254d7a1518c4e039853b66f2",
                 "shasum": ""
             },
             "require": {
@@ -2179,7 +2179,7 @@
                 "decodelabs/coercion": "^0.3",
                 "decodelabs/collections": "^0.11",
                 "decodelabs/cosmos": "^0.2.1",
-                "decodelabs/elementary": "^0.5",
+                "decodelabs/elementary": "^0.6",
                 "decodelabs/exceptional": "^0.5.3",
                 "decodelabs/glitch-support": "^0.5.1",
                 "decodelabs/veneer": "^0.12.3",
@@ -2206,7 +2206,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-develop": "0.19.x-dev"
+                    "dev-develop": "0.20.x-dev"
                 }
             },
             "autoload": {
@@ -2236,9 +2236,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/tagged/issues",
-                "source": "https://github.com/decodelabs/tagged/tree/v0.19.2"
+                "source": "https://github.com/decodelabs/tagged/tree/v0.20.0"
             },
-            "time": "2025-04-03T17:12:26+00:00"
+            "time": "2025-04-25T09:39:27+00:00"
         },
         {
             "name": "decodelabs/terminus",
@@ -4137,16 +4137,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.11",
+            "version": "2.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "8ca5f79a8f63c49b2359065832a654e1ec70ac30"
+                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8ca5f79a8f63c49b2359065832a654e1ec70ac30",
-                "reference": "8ca5f79a8f63c49b2359065832a654e1ec70ac30",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
+                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
                 "shasum": ""
             },
             "require": {
@@ -4191,7 +4191,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-24T13:45:00+00:00"
+            "time": "2025-04-16T13:19:18+00:00"
         }
     ],
     "aliases": [],
