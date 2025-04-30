@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9682e911ddc1161ca7c992091c4012f",
+    "content-hash": "340c8e95a43a6fd7b589a4f235037a80",
     "packages": [
         {
             "name": "brick/math",
@@ -1868,24 +1868,24 @@
         },
         {
             "name": "decodelabs/overpass",
-            "version": "v0.2.9",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/overpass.git",
-                "reference": "0996a84675e8c3f6c8f279f9ebe38b482970766d"
+                "reference": "4c3625e13920d83afc669bcd4d05986c3031c82a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/overpass/zipball/0996a84675e8c3f6c8f279f9ebe38b482970766d",
-                "reference": "0996a84675e8c3f6c8f279f9ebe38b482970766d",
+                "url": "https://api.github.com/repos/decodelabs/overpass/zipball/4c3625e13920d83afc669bcd4d05986c3031c82a",
+                "reference": "4c3625e13920d83afc669bcd4d05986c3031c82a",
                 "shasum": ""
             },
             "require": {
+                "decodelabs/archetype": "^0.3.9",
                 "decodelabs/atlas": "^0.12",
                 "decodelabs/exceptional": "^0.5",
+                "decodelabs/monarch": "^0.1.2",
                 "decodelabs/systemic": "^0.11.6",
-                "decodelabs/terminus": "^0.11",
-                "decodelabs/veneer": "^0.12.1",
                 "php": "^8.4"
             },
             "require-dev": {
@@ -1894,13 +1894,10 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.2.x-dev"
+                    "dev-develop": "0.3.x-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "src/Context.php"
-                ],
                 "psr-4": {
                     "DecodeLabs\\Overpass\\": "src/"
                 }
@@ -1923,9 +1920,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/overpass/issues",
-                "source": "https://github.com/decodelabs/overpass/tree/v0.2.9"
+                "source": "https://github.com/decodelabs/overpass/tree/v0.3.0"
             },
-            "time": "2025-03-04T15:18:12+00:00"
+            "time": "2025-04-30T18:10:31+00:00"
         },
         {
             "name": "decodelabs/pandora",
@@ -2553,16 +2550,16 @@
         },
         {
             "name": "decodelabs/zest",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/zest.git",
-                "reference": "2a39eda06cdef04b550d9e4969f6903ea3940972"
+                "reference": "5e45687476242811c254900d35877fe30f14f4ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/zest/zipball/2a39eda06cdef04b550d9e4969f6903ea3940972",
-                "reference": "2a39eda06cdef04b550d9e4969f6903ea3940972",
+                "url": "https://api.github.com/repos/decodelabs/zest/zipball/5e45687476242811c254900d35877fe30f14f4ab",
+                "reference": "5e45687476242811c254900d35877fe30f14f4ab",
                 "shasum": ""
             },
             "require": {
@@ -2575,7 +2572,7 @@
                 "decodelabs/iota": "^0.2",
                 "decodelabs/lucid": "^0.5",
                 "decodelabs/monarch": "^0.1.1",
-                "decodelabs/overpass": "^0.2.8",
+                "decodelabs/overpass": "^0.3",
                 "decodelabs/terminus": "^0.11.1",
                 "decodelabs/typify": "^0.3.2",
                 "decodelabs/veneer": "^0.12.3",
@@ -2593,7 +2590,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.5.x-dev"
+                    "dev-develop": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -2621,9 +2618,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/zest/issues",
-                "source": "https://github.com/decodelabs/zest/tree/v0.6.0"
+                "source": "https://github.com/decodelabs/zest/tree/v0.7.0"
             },
-            "time": "2025-04-09T21:36:51+00:00"
+            "time": "2025-04-30T18:19:38+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -4137,16 +4134,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.12",
+            "version": "2.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c"
+                "reference": "e55e03e6d4ac49cd1240907e5b08e5cd378572a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
-                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e55e03e6d4ac49cd1240907e5b08e5cd378572a9",
+                "reference": "e55e03e6d4ac49cd1240907e5b08e5cd378572a9",
                 "shasum": ""
             },
             "require": {
@@ -4191,7 +4188,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-16T13:19:18+00:00"
+            "time": "2025-04-27T12:28:25+00:00"
         }
     ],
     "aliases": [],
