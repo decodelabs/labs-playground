@@ -35,7 +35,9 @@
             ],
             "exports": [
                 ".iota",
-                "public"
+                "public",
+                "pnpm-lock.yaml",
+                "pnpm-workspace.yaml"
             ]
         },
         "branch-alias": {
