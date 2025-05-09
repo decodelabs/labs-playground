@@ -9,12 +9,12 @@ use DecodeLabs\Greenleaf\Route\Hit as Hit;
 use DecodeLabs\Greenleaf\Route\Page as Route1;
 use DecodeLabs\Greenleaf\Router as Router;
 use DecodeLabs\Singularity\Url\Leaf as LeafUrl;
-use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ServerRequestInterface as PsrRequest;
 
 return new class implements Router
 {
     public function matchIn(
-        Request $request
+        PsrRequest $request
     ): ?Hit {
         $path = ltrim($request->getUri()->getPath(), '/');
         if ($path === '') {
