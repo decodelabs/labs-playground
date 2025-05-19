@@ -8,3 +8,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Built initial implementation
 - Converted Actions to Pages
 - Upgraded Harvest to v0.5.0
+- Upgraded to use Commandment Dispatcher system
+- Upgraded Clip to v0.5.0
