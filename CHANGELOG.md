@@ -10,3 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgraded Harvest to v0.5.0
 - Upgraded to use Commandment Dispatcher system
 - Upgraded Clip to v0.5.0
+- Upgraded Terminus to v0.13
+- Upgraded Deliverance to v0.3
+- Upgraded Atlas to v0.13
