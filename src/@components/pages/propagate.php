@@ -7,7 +7,7 @@ use DecodeLabs\Tagged as Html;
  * @var Page $this
  */
 
-return function() {
+return function () {
     $this->title = 'Propagate test';
 
     $this->layout = Html::{'@fragment'}(
@@ -18,7 +18,7 @@ return function() {
         yield Html::h2('Components propagation test');
 
         yield Html::{'fragment-island'}(
-            src:  '/fragments/island-content',
+            src: '/fragments/island-content',
             content: Html::p('This is fallback content!')
         );
 

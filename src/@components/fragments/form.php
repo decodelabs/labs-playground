@@ -1,21 +1,20 @@
 <?php
 
 use DecodeLabs\Tagged as Html;
-use DecodeLabs\Tagged\Element;
 
-return function(
+return function (
     string $action,
     ?string $name = null
 ) {
-    if($name) {
-        yield Html::p('Hello, '.$name);
+    if ($name) {
+        yield Html::p('Hello, ' . $name);
     }
 
     yield Html::{'form'}(
         method: 'POST',
         action: $action,
         target: '_self',
-        content: function() use($name) {
+        content: function () use ($name) {
             yield Html::input(
                 type: 'text',
                 name: 'name',

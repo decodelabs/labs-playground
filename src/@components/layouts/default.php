@@ -7,14 +7,14 @@ use DecodeLabs\Tagged as Html;
  * @var Page $this
  */
 
-return function(
+return function (
     mixed $content
 ) {
     // Zest
     $this->decorate('Zest');
 
     // Title
-    $this->titleDecorator = fn(string $title) => $title.' - Labs Playground';
+    $this->titleDecorator = fn (string $title) => $title . ' - Labs Playground';
 
     // Favicon
     $this->addLink(
@@ -24,8 +24,8 @@ return function(
         href: '/favicon.ico'
     );
 
-    yield Html::{'layout-island[name=default]'}(function () use($content) {
-        yield Html::header(function() {
+    yield Html::{'layout-island[name=default]'}(function () use ($content) {
+        yield Html::header(function () {
             yield Html::h1('Hello, world!');
 
             yield Html::{'@fragment'}(

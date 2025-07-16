@@ -1,7 +1,7 @@
 <?php
 
-use DecodeLabs\Greenleaf\Route\Parameter;
 use DecodeLabs\Greenleaf\Route\Page as Route;
+use DecodeLabs\Greenleaf\Route\Parameter;
 use DecodeLabs\Horizon\Page;
 use DecodeLabs\Tagged as Html;
 
@@ -13,7 +13,7 @@ return
 #[Route('/', 'index', parameters: [
     new Parameter('test', default: 'hello')
 ])]
-function(
+function (
     string $test
 ) {
     $this->title = 'Fabric Starter';
@@ -28,13 +28,13 @@ function(
     );
 
     // Content
-    yield Html::{'main'}(function () use($test) {
+    yield Html::{'main'}(function () use ($test) {
         yield Html::h2('Welcome to Fabric Starter');
 
-        yield Html::p('Param: '.$test);
+        yield Html::p('Param: ' . $test);
 
         yield Html::{'fragment-island'}(
-            src:  '/fragments/island-content',
+            src: '/fragments/island-content',
             content: Html::p('This is fallback content!')
         );
 

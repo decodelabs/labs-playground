@@ -8,8 +8,8 @@ use DecodeLabs\Tagged as Html;
  * @var Page $this
  */
 
-return function() {
-    yield Html::{'nav.main'}(function() {
+return function () {
+    yield Html::{'nav.main'}(function () {
         yield Html::{'a'}(
             content: 'Home',
             href: Greenleaf::url('index.php')

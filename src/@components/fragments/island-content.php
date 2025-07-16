@@ -3,7 +3,7 @@
 use DecodeLabs\Tagged as Html;
 use DecodeLabs\Tagged\Element;
 
-return function(): mixed {
+return function (): mixed {
     yield Html::p('This is fragment content!');
 
     yield Html::{'component-island[name=AnotherReactThing]'}(function (Element $el) {

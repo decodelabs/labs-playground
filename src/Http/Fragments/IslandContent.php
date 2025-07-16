@@ -17,7 +17,8 @@ class IslandContent implements Action
 {
     use ByMethodTrait;
 
-    public function get(): Page {
+    public function get(): Page
+    {
         return Page::fromFragment(
             fragment: '@components/fragments/island-content',
         );

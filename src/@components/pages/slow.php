@@ -7,7 +7,7 @@ use DecodeLabs\Tagged as Html;
  * @var Page $this
  */
 
-return function() {
+return function () {
     $this->title = 'Slow content';
 
     $this->layout = Html::{'@fragment'}(

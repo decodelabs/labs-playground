@@ -18,7 +18,7 @@ return
     new Parameter('part1', validate: 'path'),
     new Parameter('part2', default: 'default')
 ])]
-function(
+function (
     string $part1,
     string $part2,
     Request $request
@@ -30,7 +30,7 @@ function(
     );
 
 
-    yield Html::{'main'}(function () use($part1, $part2, $request) {
+    yield Html::{'main'}(function () use ($part1, $part2, $request) {
         yield Html::h1('Complex route test');
 
         yield Html::{'nav.tabs'}([

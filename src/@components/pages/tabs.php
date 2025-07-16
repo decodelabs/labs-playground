@@ -7,7 +7,7 @@ use DecodeLabs\Tagged as Html;
  * @var Page $this
  */
 
-return function() {
+return function () {
     $this->title = 'Tabs test';
 
     $this->layout = Html::{'@fragment'}(
@@ -17,7 +17,7 @@ return function() {
     yield Html::{'main'}(function () {
         yield Html::h1('Tabs test');
 
-        yield Html::{'nav.tabs'}(function() {
+        yield Html::{'nav.tabs'}(function () {
             yield Html::{'a.tab'}(
                 href: '/fragments/tab/1',
                 content: 'Tab 1',
@@ -38,7 +38,7 @@ return function() {
         });
 
         yield Html::{'fragment-island'}(
-            src:  '/fragments/tab/1',
+            src: '/fragments/tab/1',
             name: 'tab-fragment',
             content: Html::p('This is fallback content!')
         );
