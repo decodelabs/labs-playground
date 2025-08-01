@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f077cb313df221a22a62fff9e66d4012",
+    "content-hash": "e966beebce1db9f4079e77635ab8a0ea",
     "packages": [
         {
             "name": "brick/math",
@@ -1092,16 +1092,16 @@
         },
         {
             "name": "decodelabs/fabric",
-            "version": "v0.8.6",
+            "version": "v0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/fabric.git",
-                "reference": "99e2bbe505f9a6de9a5979e0fb612b6ba1048ddd"
+                "reference": "8c9bff00bb191b1bf401de26a874f043c89d7e61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/99e2bbe505f9a6de9a5979e0fb612b6ba1048ddd",
-                "reference": "99e2bbe505f9a6de9a5979e0fb612b6ba1048ddd",
+                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/8c9bff00bb191b1bf401de26a874f043c89d7e61",
+                "reference": "8c9bff00bb191b1bf401de26a874f043c89d7e61",
                 "shasum": ""
             },
             "require": {
@@ -1114,7 +1114,7 @@
                 "decodelabs/genesis": "^0.12.4",
                 "decodelabs/glitch": "^0.20",
                 "decodelabs/greenleaf": "^0.8.4",
-                "decodelabs/harvest": "^0.5.4",
+                "decodelabs/harvest": "^0.6",
                 "decodelabs/lucid": "^0.5.2",
                 "decodelabs/monarch": "^0.1.4",
                 "decodelabs/pandora": "^0.3.3",
@@ -1156,9 +1156,9 @@
             "description": "Lightweight PHP framework implementation using DecodeLabs ecosystem",
             "support": {
                 "issues": "https://github.com/decodelabs/fabric/issues",
-                "source": "https://github.com/decodelabs/fabric/tree/v0.8.6"
+                "source": "https://github.com/decodelabs/fabric/tree/v0.8.7"
             },
-            "time": "2025-07-16T11:45:37+00:00"
+            "time": "2025-08-01T13:04:05+00:00"
         },
         {
             "name": "decodelabs/fluidity",
@@ -1351,16 +1351,16 @@
         },
         {
             "name": "decodelabs/greenleaf",
-            "version": "v0.8.5",
+            "version": "v0.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/greenleaf.git",
-                "reference": "b11af476bba62ea37c6a4d97fe66cb87fbf9f44f"
+                "reference": "d0350ad2ece0fb29004afbf7966c7958da3b427a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/b11af476bba62ea37c6a4d97fe66cb87fbf9f44f",
-                "reference": "b11af476bba62ea37c6a4d97fe66cb87fbf9f44f",
+                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/d0350ad2ece0fb29004afbf7966c7958da3b427a",
+                "reference": "d0350ad2ece0fb29004afbf7966c7958da3b427a",
                 "shasum": ""
             },
             "require": {
@@ -1369,7 +1369,7 @@
                 "decodelabs/coercion": "^0.3.3",
                 "decodelabs/dictum": "^0.6.10",
                 "decodelabs/exceptional": "^0.6.1",
-                "decodelabs/harvest": "^0.5.4",
+                "decodelabs/harvest": "^0.6",
                 "decodelabs/iota": "^0.2.4",
                 "decodelabs/monarch": "^0.1.4",
                 "decodelabs/nuance": "^0.1.2",
@@ -1426,22 +1426,22 @@
             "description": "Super-fast directory based HTTP router",
             "support": {
                 "issues": "https://github.com/decodelabs/greenleaf/issues",
-                "source": "https://github.com/decodelabs/greenleaf/tree/v0.8.5"
+                "source": "https://github.com/decodelabs/greenleaf/tree/v0.8.6"
             },
-            "time": "2025-07-16T11:49:07+00:00"
+            "time": "2025-08-01T13:00:55+00:00"
         },
         {
             "name": "decodelabs/harvest",
-            "version": "v0.5.5",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/harvest.git",
-                "reference": "b6463ed9e2be5ce44fc3018bdb63b1a9392cdf39"
+                "reference": "fce94b8cbf8307c158d5fec70f5068e121bd9ed3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/b6463ed9e2be5ce44fc3018bdb63b1a9392cdf39",
-                "reference": "b6463ed9e2be5ce44fc3018bdb63b1a9392cdf39",
+                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/fce94b8cbf8307c158d5fec70f5068e121bd9ed3",
+                "reference": "fce94b8cbf8307c158d5fec70f5068e121bd9ed3",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1485,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.5.x-dev"
+                    "dev-develop": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -1509,9 +1509,9 @@
             "description": "PSR-15 HTTP stack without the mess",
             "support": {
                 "issues": "https://github.com/decodelabs/harvest/issues",
-                "source": "https://github.com/decodelabs/harvest/tree/v0.5.5"
+                "source": "https://github.com/decodelabs/harvest/tree/v0.6.0"
             },
-            "time": "2025-07-16T13:00:33+00:00"
+            "time": "2025-08-01T12:55:31+00:00"
         },
         {
             "name": "decodelabs/hatch",
@@ -1567,16 +1567,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.4.9",
+            "version": "v0.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "5236674b0826fb92099307a396331f17f09c87f4"
+                "reference": "251bdfa9268c224d6ab74d3e8f9ca10071cb91f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/5236674b0826fb92099307a396331f17f09c87f4",
-                "reference": "5236674b0826fb92099307a396331f17f09c87f4",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/251bdfa9268c224d6ab74d3e8f9ca10071cb91f8",
+                "reference": "251bdfa9268c224d6ab74d3e8f9ca10071cb91f8",
                 "shasum": ""
             },
             "require": {
@@ -1595,7 +1595,7 @@
             },
             "require-dev": {
                 "decodelabs/greenleaf": "^0.8.4",
-                "decodelabs/harvest": "^0.5.4",
+                "decodelabs/harvest": "^0.6",
                 "decodelabs/phpstan-decodelabs": "^0.7.0"
             },
             "type": "library",
@@ -1625,9 +1625,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.4.9"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.4.10"
             },
-            "time": "2025-07-16T13:02:14+00:00"
+            "time": "2025-08-01T13:01:35+00:00"
         },
         {
             "name": "decodelabs/iota",
@@ -2621,16 +2621,16 @@
         },
         {
             "name": "decodelabs/zest",
-            "version": "v0.8.6",
+            "version": "v0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/zest.git",
-                "reference": "d38d5572fb04c27d3d537de6818c42692019aaf6"
+                "reference": "a9627080ad4e6ef599127e767fbaab87b4d9197b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/zest/zipball/d38d5572fb04c27d3d537de6818c42692019aaf6",
-                "reference": "d38d5572fb04c27d3d537de6818c42692019aaf6",
+                "url": "https://api.github.com/repos/decodelabs/zest/zipball/a9627080ad4e6ef599127e767fbaab87b4d9197b",
+                "reference": "a9627080ad4e6ef599127e767fbaab87b4d9197b",
                 "shasum": ""
             },
             "require": {
@@ -2655,7 +2655,7 @@
                 "decodelabs/horizon": "<0.4"
             },
             "require-dev": {
-                "decodelabs/harvest": "^0.5.4",
+                "decodelabs/harvest": "^0.6",
                 "decodelabs/horizon": "^0.4.8",
                 "decodelabs/phpstan-decodelabs": "^0.7",
                 "ext-pcntl": "*"
@@ -2694,9 +2694,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/zest/issues",
-                "source": "https://github.com/decodelabs/zest/tree/v0.8.6"
+                "source": "https://github.com/decodelabs/zest/tree/v0.8.7"
             },
-            "time": "2025-07-16T13:29:53+00:00"
+            "time": "2025-08-01T13:02:56+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -3771,16 +3771,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v7.3.1",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "241d5ac4910d256660238a7ecf250deba4c73063"
+                "reference": "81b48f4daa96272efcce9c7a6c4b58e629df3c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/241d5ac4910d256660238a7ecf250deba4c73063",
-                "reference": "241d5ac4910d256660238a7ecf250deba4c73063",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/81b48f4daa96272efcce9c7a6c4b58e629df3c90",
+                "reference": "81b48f4daa96272efcce9c7a6c4b58e629df3c90",
                 "shasum": ""
             },
             "require": {
@@ -3847,7 +3847,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v7.3.1"
+                "source": "https://github.com/symfony/translation/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -3859,11 +3859,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-27T19:55:54+00:00"
+            "time": "2025-07-30T17:31:46+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -4135,16 +4139,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.17",
+            "version": "2.1.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "89b5ef665716fa2a52ecd2633f21007a6a349053"
+                "reference": "1ccf445757458c06a04eb3f803603cb118fe5fa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/89b5ef665716fa2a52ecd2633f21007a6a349053",
-                "reference": "89b5ef665716fa2a52ecd2633f21007a6a349053",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/1ccf445757458c06a04eb3f803603cb118fe5fa6",
+                "reference": "1ccf445757458c06a04eb3f803603cb118fe5fa6",
                 "shasum": ""
             },
             "require": {
@@ -4189,7 +4193,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-21T20:55:28+00:00"
+            "time": "2025-07-28T19:35:08+00:00"
         }
     ],
     "aliases": [],
