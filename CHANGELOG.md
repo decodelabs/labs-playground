@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgraded Atlas to v0.13
 - Upgraded Exceptional to v0.6
 - Upgraded Glitch to v0.20
+- Upgraded Greenleaf to v0.9

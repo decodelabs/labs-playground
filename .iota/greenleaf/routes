@@ -10,12 +10,10 @@ return [
         'parameters' => [
             'part1' => [
                 'name' => 'part1',
-                'validate' => null,
                 'default' => null
             ],
             'part2' => [
                 'name' => 'part2',
-                'validate' => null,
                 'default' => null
             ]
         ]
@@ -31,8 +29,22 @@ return [
         'parameters' => [
             'tab' => [
                 'name' => 'tab',
-                'validate' => null,
                 'default' => null
+            ]
+        ]
+    ],
+    [
+        'target' => 'leaf:/fragments/tab',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Action',
+        'pattern' => '/fragments/tab/{tab}',
+        'methods' => [
+            'GET',
+            'POST'
+        ],
+        'parameters' => [
+            'tab' => [
+                'name' => 'tab',
+                'default' => '1'
             ]
         ]
     ],
@@ -45,15 +57,12 @@ return [
         ],
         'parameters' => [
             'part1' => [
+                'type' => 'path',
                 'name' => 'part1',
-                'validate' => [
-                    'as' => 'Path'
-                ],
                 'default' => null
             ],
             'part2' => [
                 'name' => 'part2',
-                'validate' => null,
                 'default' => 'default'
             ]
         ]
@@ -76,12 +85,10 @@ return [
         'parameters' => [
             'part1' => [
                 'name' => 'part1',
-                'validate' => null,
                 'default' => null
             ],
             'part2' => [
                 'name' => 'part2',
-                'validate' => null,
                 'default' => null
             ]
         ]
@@ -129,7 +136,6 @@ return [
         'parameters' => [
             'test' => [
                 'name' => 'test',
-                'validate' => null,
                 'default' => 'hello'
             ]
         ]

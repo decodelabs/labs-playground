@@ -11,8 +11,10 @@ namespace DecodeLabs\Playground\Http\Fragments;
 
 use DecodeLabs\Greenleaf\Action;
 use DecodeLabs\Greenleaf\Action\ByMethodTrait;
+use DecodeLabs\Greenleaf\Route\Action as Route;
 use DecodeLabs\Horizon\Page;
 
+#[Route('fragments/island-content', method: 'get')]
 class IslandContent implements Action
 {
     use ByMethodTrait;

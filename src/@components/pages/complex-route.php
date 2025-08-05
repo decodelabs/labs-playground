@@ -15,7 +15,7 @@ return
 #[Route('test-{part1}-{part2}', 'complex-route.php?linear')]
 #[Route('test/{part1}/test-{part2}/', 'complex-route.php')]
 #[Route('test/{part1}', 'complex-route.php', parameters: [
-    new Parameter('part1', validate: 'path'),
+    new Parameter\Path('part1'),
     new Parameter('part2', default: 'default')
 ])]
 function (

@@ -8,79 +8,96 @@ use DecodeLabs\Greenleaf\Route\Action as Route2;
 use DecodeLabs\Greenleaf\Route\Hit as Hit;
 use DecodeLabs\Greenleaf\Route\Page as Route1;
 use DecodeLabs\Greenleaf\Router as Router;
+use DecodeLabs\Monarch as Monarch;
 use DecodeLabs\Singularity\Url\Leaf as LeafUrl;
 use Psr\Http\Message\ServerRequestInterface as PsrRequest;
+use Throwable as Throwable;
 
 return new class implements Router
 {
     public function matchIn(
         PsrRequest $request
     ): ?Hit {
-        $path = ltrim($request->getUri()->getPath(), '/');
-        if ($path === '') {
-            $parts = [];
-        } else {
-            $parts = explode('/', $path);
-        }
-        $params = [];
-        $method = $request->getMethod();
-        $part = array_shift($parts);
-        if($part === null) {
-            if(in_array($method, ['GET'])) {
-                return new Hit(Route1::fromArray([
-                    'target' => 'leaf:/index.php',
-                    'pattern' => '/',
-                    'methods' => [
-                        'GET'
-                    ],
-                    'parameters' => [
-                        'test' => [
-                            'name' => 'test',
-                            'validate' => null,
-                            'default' => 'hello'
-                        ]
-                    ]
-                ]), array_merge([
-                    'test' => 'hello'
-                ], $params));
+        try {
+            $path = ltrim($request->getUri()->getPath(), '/');
+            
+            if ($path === '') {
+                $parts = [];
+            } else {
+                $parts = explode('/', $path);
             }
-            return null;
-        }
-        switch($part) {
-            case 'test':
-                $part = array_shift($parts);
-                if($part === null) {
+            
+            $params = [];
+            $method = $request->getMethod();
+            $part = array_shift($parts);
+            
+            if($part === null) {
+                if(in_array($method, ['GET'])) {
+                    $params = array_merge([
+                        'test' => 'hello'
+                    ], $params);
                     
-                    return null;
+                    $valid = true;
+                    $potentialRoute = Route1::fromArray([
+                        'target' => 'leaf:/index.php',
+                        'pattern' => '/',
+                        'methods' => [
+                            'GET'
+                        ],
+                        'parameters' => [
+                            'test' => [
+                                'name' => 'test',
+                                'default' => 'hello'
+                            ]
+                        ]
+                    ]);
+                    
+                    foreach($potentialRoute->parameters as $parameter) {
+                        if(!$parameter->validate($params[$parameter->name])) {
+                            $valid = false;
+                            break;
+                        }
+                    
+                        $params[$parameter->name] = $parameter->resolve($params[$parameter->name]);
+                    }
+                    
+                    if($valid) {
+                        return new Hit($potentialRoute, $params);
+                    }
                 }
-                
+            
+                return null;
+            }
+            switch($part) {
+                case 'test':
+                    $part = array_shift($parts);
+                    
+                    if($part === null) {
+                            return null;
+                    }
                     if (preg_match('/^(?P<part1>\w+)$/', $part, $matches)) {
                         $hit = (function($parts) use ($matches, $method, $params) {
-                            foreach(['part1'] as $name) {
-                                $params[$name] = $matches[$name];
-                            }
+                            $params['part1'] = $matches['part1'];
                             $part = array_shift($parts);
-                            if($part === null) {
-                                
-                                return null;
-                            }
                             
-                            if (preg_match('/^test\-(?P<part2>\w+)$/', $part, $matches)) {
-                                foreach(['part2'] as $name) {
-                                    $params[$name] = $matches[$name];
-                                }
-                                $part = array_shift($parts);
-                                if($part === null) {
-                                    
+                            if($part === null) {
                                     return null;
-                                }
+                            }
+                            if (preg_match('/^test\-(?P<part2>\w+)$/', $part, $matches)) {
+                                $params['part2'] = $matches['part2'];
+                                $part = array_shift($parts);
                                 
+                                if($part === null) {
+                                        return null;
+                                }
                                 if (preg_match('/^$/', $part, $matches)) {
                                     
                                     $part = array_shift($parts);
+                                    
                                     if($part === null) {
                                         if(in_array($method, ['GET'])) {
-                                            return new Hit(Route1::fromArray([
+                                            $valid = true;
+                                            $potentialRoute = Route1::fromArray([
                                                 'target' => 'leaf:/complex-route.php',
                                                 'pattern' => '/test/{part1}/test-{part2}/',
                                                 'methods' => [
@@ -89,20 +106,31 @@ return new class implements Router
                                                 'parameters' => [
                                                     'part1' => [
                                                         'name' => 'part1',
-                                                        'validate' => null,
                                                         'default' => null
                                                     ],
                                                     'part2' => [
                                                         'name' => 'part2',
-                                                        'validate' => null,
                                                         'default' => null
                                                     ]
                                                 ]
-                                            ]), $params);
+                                            ]);
+                                            
+                                            foreach($potentialRoute->parameters as $parameter) {
+                                                if(!$parameter->validate($params[$parameter->name])) {
+                                                    $valid = false;
+                                                    break;
+                                                }
+                                            
+                                                $params[$parameter->name] = $parameter->resolve($params[$parameter->name]);
+                                            }
+                                            
+                                            if($valid) {
+                                                return new Hit($potentialRoute, $params);
+                                            }
                                         }
+                                    
                                         return null;
                                     }
-                                    
                                     return null;
                                 }
                                 return null;
@@ -118,12 +146,16 @@ return new class implements Router
                     $multiPart = implode('/', $multiParts);
                     if (preg_match('/^(?P<part1>.+?)$/', $multiPart, $matches)) {
                         $hit = (function($parts) use ($matches, $method, $params) {
-                            foreach(['part1'] as $name) {
-                                $params[$name] = $matches[$name];
-                            }
+                            $params['part1'] = $matches['part1'];
                             $part = array_shift($parts);
+                            
                             if(in_array($method, ['GET'])) {
-                                return new Hit(Route1::fromArray([
+                                $params = array_merge([
+                                    'part2' => 'default'
+                                ], $params);
+                                
+                                $valid = true;
+                                $potentialRoute = Route1::fromArray([
                                     'target' => 'leaf:/complex-route.php',
                                     'pattern' => '/test/{part1}',
                                     'methods' => [
@@ -131,207 +163,254 @@ return new class implements Router
                                     ],
                                     'parameters' => [
                                         'part1' => [
+                                            'type' => 'path',
                                             'name' => 'part1',
-                                            'validate' => [
-                                                'as' => 'Path'
-                                            ],
                                             'default' => null
                                         ],
                                         'part2' => [
                                             'name' => 'part2',
-                                            'validate' => null,
                                             'default' => 'default'
                                         ]
                                     ]
-                                ]), array_merge([
-                                    'part2' => 'default'
-                                ], $params));
+                                ]);
+                                
+                                foreach($potentialRoute->parameters as $parameter) {
+                                    if(!$parameter->validate($params[$parameter->name])) {
+                                        $valid = false;
+                                        break;
+                                    }
+                                
+                                    $params[$parameter->name] = $parameter->resolve($params[$parameter->name]);
+                                }
+                                
+                                if($valid) {
+                                    return new Hit($potentialRoute, $params);
+                                }
                             }
-                            
                             return null;
                         })($parts);
                         if($hit !== null) {
                             return $hit;
                         }
                     }
-                return null;
-                break;
-            
-            case 'fragments':
-                $part = array_shift($parts);
+                    return null;
+                    break;
                 
-                switch($part) {
-                    case 'tab':
-                        $part = array_shift($parts);
-                        if($part === null) {
-                            
-                            return null;
-                        }
-                        
-                        if (preg_match('/^(?P<tab>\w+)$/', $part, $matches)) {
-                            foreach(['tab'] as $name) {
-                                $params[$name] = $matches[$name];
-                            }
+                case 'fragments':
+                    $part = array_shift($parts);
+                    
+                    
+                    switch($part) {
+                        case 'tab':
                             $part = array_shift($parts);
+                            
                             if($part === null) {
-                                if(in_array($method, ['GET', 'POST'])) {
-                                    return new Hit(Route2::fromArray([
-                                        'target' => 'leaf:/fragments/tab',
-                                        'pattern' => '/fragments/tab/{tab}',
-                                        'methods' => [
-                                            'GET',
-                                            'POST'
-                                        ],
-                                        'parameters' => [
-                                            'tab' => [
-                                                'name' => 'tab',
-                                                'validate' => null,
-                                                'default' => null
+                                    return null;
+                            }
+                            if (preg_match('/^(?P<tab>\w+)$/', $part, $matches)) {
+                                $params['tab'] = $matches['tab'];
+                                $part = array_shift($parts);
+                                
+                                if($part === null) {
+                                    if(in_array($method, ['GET', 'POST'])) {
+                                        $params = array_merge([
+                                            'tab' => '1'
+                                        ], $params);
+                                        
+                                        $valid = true;
+                                        $potentialRoute = Route2::fromArray([
+                                            'target' => 'leaf:/fragments/tab',
+                                            'pattern' => '/fragments/tab/{tab}',
+                                            'methods' => [
+                                                'GET',
+                                                'POST'
+                                            ],
+                                            'parameters' => [
+                                                'tab' => [
+                                                    'name' => 'tab',
+                                                    'default' => '1'
+                                                ]
                                             ]
-                                        ]
-                                    ]), $params);
+                                        ]);
+                                        
+                                        foreach($potentialRoute->parameters as $parameter) {
+                                            if(!$parameter->validate($params[$parameter->name])) {
+                                                $valid = false;
+                                                break;
+                                            }
+                                        
+                                            $params[$parameter->name] = $parameter->resolve($params[$parameter->name]);
+                                        }
+                                        
+                                        if($valid) {
+                                            return new Hit($potentialRoute, $params);
+                                        }
+                                    }
+                                
+                                    return null;
                                 }
                                 return null;
                             }
-                            
                             return null;
-                        }
-                        return null;
-                        break;
-                    
-                    case 'island-content':
-                        $part = array_shift($parts);
-                        if($part === null) {
-                            if(in_array($method, ['GET'])) {
-                                return new Hit(Route2::fromArray([
-                                    'target' => 'leaf:/fragments/island-content',
-                                    'pattern' => '/fragments/island-content',
-                                    'methods' => [
-                                        'GET'
-                                    ]
-                                ]), $params);
+                            break;
+                        
+                        case 'island-content':
+                            $part = array_shift($parts);
+                            
+                            if($part === null) {
+                                if(in_array($method, ['GET'])) {
+                                    return new Hit(Route2::fromArray([
+                                        'target' => 'leaf:/fragments/island-content',
+                                        'pattern' => '/fragments/island-content',
+                                        'methods' => [
+                                            'GET'
+                                        ]
+                                    ]), $params);
+                                }
+                            
+                                return null;
                             }
                             return null;
+                            break;
+                        
+                        default:
+                            return null;
+                    }
+                    break;
+                
+                case 'tabs':
+                    $part = array_shift($parts);
+                    
+                    if($part === null) {
+                        if(in_array($method, ['GET'])) {
+                            return new Hit(Route1::fromArray([
+                                'target' => 'leaf:/tabs.php',
+                                'pattern' => '/tabs',
+                                'methods' => [
+                                    'GET'
+                                ]
+                            ]), $params);
+                        }
+                    
+                        return null;
+                    }
+                    return null;
+                    break;
+                
+                case 'slow':
+                    $part = array_shift($parts);
+                    
+                    if($part === null) {
+                        if(in_array($method, ['GET'])) {
+                            return new Hit(Route1::fromArray([
+                                'target' => 'leaf:/slow.php',
+                                'pattern' => '/slow',
+                                'methods' => [
+                                    'GET'
+                                ]
+                            ]), $params);
+                        }
+                    
+                        return null;
+                    }
+                    return null;
+                    break;
+                
+                case 'propagate':
+                    $part = array_shift($parts);
+                    
+                    if($part === null) {
+                        if(in_array($method, ['GET'])) {
+                            return new Hit(Route1::fromArray([
+                                'target' => 'leaf:/propagate.php',
+                                'pattern' => '/propagate',
+                                'methods' => [
+                                    'GET'
+                                ]
+                            ]), $params);
+                        }
+                    
+                        return null;
+                    }
+                    return null;
+                    break;
+                
+                case 'form':
+                    $part = array_shift($parts);
+                    
+                    if($part === null) {
+                        if(in_array($method, ['GET', 'POST'])) {
+                            return new Hit(Route1::fromArray([
+                                'target' => 'leaf:/form.php',
+                                'pattern' => '/form',
+                                'methods' => [
+                                    'GET',
+                                    'POST'
+                                ]
+                            ]), $params);
+                        }
+                    
+                        return null;
+                    }
+                    return null;
+                    break;
+                
+                default:
+                    if (preg_match('/^test\-(?P<part1>\w+)\-(?P<part2>\w+)$/', $part, $matches)) {
+                        foreach(['part1', 'part2'] as $name) {
+                            $params[$name] = $matches[$name];
                         }
                         
-                        return null;
-                        break;
-                    
-                    default:
+                        $part = array_shift($parts);
                         
+                        if($part === null) {
+                            if(in_array($method, ['GET'])) {
+                                $valid = true;
+                                $potentialRoute = Route1::fromArray([
+                                    'target' => 'leaf:/complex-route.php?linear',
+                                    'pattern' => '/test-{part1}-{part2}',
+                                    'methods' => [
+                                        'GET'
+                                    ],
+                                    'parameters' => [
+                                        'part1' => [
+                                            'name' => 'part1',
+                                            'default' => null
+                                        ],
+                                        'part2' => [
+                                            'name' => 'part2',
+                                            'default' => null
+                                        ]
+                                    ]
+                                ]);
+                                
+                                foreach($potentialRoute->parameters as $parameter) {
+                                    if(!$parameter->validate($params[$parameter->name])) {
+                                        $valid = false;
+                                        break;
+                                    }
+                                
+                                    $params[$parameter->name] = $parameter->resolve($params[$parameter->name]);
+                                }
+                                
+                                if($valid) {
+                                    return new Hit($potentialRoute, $params);
+                                }
+                            }
+                        
+                            return null;
+                        }
                         return null;
-                }
-                break;
-            
-            case 'tabs':
-                $part = array_shift($parts);
-                if($part === null) {
-                    if(in_array($method, ['GET'])) {
-                        return new Hit(Route1::fromArray([
-                            'target' => 'leaf:/tabs.php',
-                            'pattern' => '/tabs',
-                            'methods' => [
-                                'GET'
-                            ]
-                        ]), $params);
                     }
                     return null;
-                }
-                
-                return null;
-                break;
-            
-            case 'slow':
-                $part = array_shift($parts);
-                if($part === null) {
-                    if(in_array($method, ['GET'])) {
-                        return new Hit(Route1::fromArray([
-                            'target' => 'leaf:/slow.php',
-                            'pattern' => '/slow',
-                            'methods' => [
-                                'GET'
-                            ]
-                        ]), $params);
-                    }
-                    return null;
-                }
-                
-                return null;
-                break;
-            
-            case 'propagate':
-                $part = array_shift($parts);
-                if($part === null) {
-                    if(in_array($method, ['GET'])) {
-                        return new Hit(Route1::fromArray([
-                            'target' => 'leaf:/propagate.php',
-                            'pattern' => '/propagate',
-                            'methods' => [
-                                'GET'
-                            ]
-                        ]), $params);
-                    }
-                    return null;
-                }
-                
-                return null;
-                break;
-            
-            case 'form':
-                $part = array_shift($parts);
-                if($part === null) {
-                    if(in_array($method, ['GET', 'POST'])) {
-                        return new Hit(Route1::fromArray([
-                            'target' => 'leaf:/form.php',
-                            'pattern' => '/form',
-                            'methods' => [
-                                'GET',
-                                'POST'
-                            ]
-                        ]), $params);
-                    }
-                    return null;
-                }
-                
-                return null;
-                break;
-            
-            default:
-                
-            if (preg_match('/^test\-(?P<part1>\w+)\-(?P<part2>\w+)$/', $part, $matches)) {
-                foreach(['part1', 'part2'] as $name) {
-                    $params[$name] = $matches[$name];
-                }
-                $part = array_shift($parts);
-                if($part === null) {
-                    if(in_array($method, ['GET'])) {
-                        return new Hit(Route1::fromArray([
-                            'target' => 'leaf:/complex-route.php?linear',
-                            'pattern' => '/test-{part1}-{part2}',
-                            'methods' => [
-                                'GET'
-                            ],
-                            'parameters' => [
-                                'part1' => [
-                                    'name' => 'part1',
-                                    'validate' => null,
-                                    'default' => null
-                                ],
-                                'part2' => [
-                                    'name' => 'part2',
-                                    'validate' => null,
-                                    'default' => null
-                                ]
-                            ]
-                        ]), $params);
-                    }
-                    return null;
-                }
-                
-                return null;
+            };
+        } catch (Throwable $e) {
+            if (Monarch::isDevelopment()) {
+                dd($e);
             }
-                return null;
-        };
+
+            throw $e;
+        }
     }
 
     public function matchOut(
@@ -339,9 +418,11 @@ return new class implements Router
         ?array $parameters = null
     ): ?Hit {
         $parameters ??= [];
+        
         if (is_string($uri)) {
             $uri = LeafUrl::fromString($uri);
         }
+        
         $groupData = [];
         switch($uri->getPath()) {
             case '/complex-route.php':
@@ -362,12 +443,10 @@ return new class implements Router
                             'parameters' => [
                                 'part1' => [
                                     'name' => 'part1',
-                                    'validate' => null,
                                     'default' => null
                                 ],
                                 'part2' => [
                                     'name' => 'part2',
-                                    'validate' => null,
                                     'default' => null
                                 ]
                             ]
@@ -388,15 +467,12 @@ return new class implements Router
                             ],
                             'parameters' => [
                                 'part1' => [
+                                    'type' => 'path',
                                     'name' => 'part1',
-                                    'validate' => [
-                                        'as' => 'Path'
-                                    ],
                                     'default' => null
                                 ],
                                 'part2' => [
                                     'name' => 'part2',
-                                    'validate' => null,
                                     'default' => 'default'
                                 ]
                             ]
@@ -419,12 +495,10 @@ return new class implements Router
                             'parameters' => [
                                 'part1' => [
                                     'name' => 'part1',
-                                    'validate' => null,
                                     'default' => null
                                 ],
                                 'part2' => [
                                     'name' => 'part2',
-                                    'validate' => null,
                                     'default' => null
                                 ]
                             ]
@@ -451,8 +525,7 @@ return new class implements Router
                             'parameters' => [
                                 'tab' => [
                                     'name' => 'tab',
-                                    'validate' => null,
-                                    'default' => null
+                                    'default' => '1'
                                 ]
                             ]
                         ])
@@ -568,7 +641,6 @@ return new class implements Router
                             'parameters' => [
                                 'test' => [
                                     'name' => 'test',
-                                    'validate' => null,
                                     'default' => 'hello'
                                 ]
                             ]
