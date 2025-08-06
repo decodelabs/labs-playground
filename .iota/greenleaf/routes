@@ -38,6 +38,7 @@ return [
         'class' => 'DecodeLabs\\Greenleaf\\Route\\Action',
         'pattern' => '/fragments/tab/{tab}',
         'methods' => [
+            'OPTIONS',
             'GET',
             'POST'
         ],
@@ -72,6 +73,7 @@ return [
         'class' => 'DecodeLabs\\Greenleaf\\Route\\Action',
         'pattern' => '/fragments/island-content',
         'methods' => [
+            'OPTIONS',
             'GET'
         ]
     ],

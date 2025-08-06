@@ -1351,16 +1351,16 @@
         },
         {
             "name": "decodelabs/greenleaf",
-            "version": "v0.9.1",
+            "version": "v0.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/greenleaf.git",
-                "reference": "f299a448aee7efc9327f0b057c5a0852bfc4cd62"
+                "reference": "9948594a662d9631fc80054201270d47fc7a7a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/f299a448aee7efc9327f0b057c5a0852bfc4cd62",
-                "reference": "f299a448aee7efc9327f0b057c5a0852bfc4cd62",
+                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/9948594a662d9631fc80054201270d47fc7a7a57",
+                "reference": "9948594a662d9631fc80054201270d47fc7a7a57",
                 "shasum": ""
             },
             "require": {
@@ -1429,9 +1429,9 @@
             "description": "Super-fast directory based HTTP router",
             "support": {
                 "issues": "https://github.com/decodelabs/greenleaf/issues",
-                "source": "https://github.com/decodelabs/greenleaf/tree/v0.9.1"
+                "source": "https://github.com/decodelabs/greenleaf/tree/v0.9.2"
             },
-            "time": "2025-08-05T15:01:39+00:00"
+            "time": "2025-08-06T14:12:38+00:00"
         },
         {
             "name": "decodelabs/harvest",
@@ -1570,16 +1570,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.4.11",
+            "version": "v0.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "678296937883d6f6df7321bd2310504f9d7ee4db"
+                "reference": "b3142dde10dd6e1e8b65ec992c01383b70be1c2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/678296937883d6f6df7321bd2310504f9d7ee4db",
-                "reference": "678296937883d6f6df7321bd2310504f9d7ee4db",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/b3142dde10dd6e1e8b65ec992c01383b70be1c2d",
+                "reference": "b3142dde10dd6e1e8b65ec992c01383b70be1c2d",
                 "shasum": ""
             },
             "require": {
@@ -1628,9 +1628,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.4.11"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.4.12"
             },
-            "time": "2025-08-05T12:58:27+00:00"
+            "time": "2025-08-06T14:13:39+00:00"
         },
         {
             "name": "decodelabs/iota",

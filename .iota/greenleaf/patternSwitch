@@ -212,7 +212,7 @@ return new class implements Router
                                 $part = array_shift($parts);
                                 
                                 if($part === null) {
-                                    if(in_array($method, ['GET', 'POST'])) {
+                                    if(in_array($method, ['OPTIONS', 'GET', 'POST'])) {
                                         $params = array_merge([
                                             'tab' => '1'
                                         ], $params);
@@ -222,6 +222,7 @@ return new class implements Router
                                             'target' => 'leaf:/fragments/tab',
                                             'pattern' => '/fragments/tab/{tab}',
                                             'methods' => [
+                                                'OPTIONS',
                                                 'GET',
                                                 'POST'
                                             ],
@@ -258,11 +259,12 @@ return new class implements Router
                             $part = array_shift($parts);
                             
                             if($part === null) {
-                                if(in_array($method, ['GET'])) {
+                                if(in_array($method, ['OPTIONS', 'GET'])) {
                                     return new Hit(Route2::fromArray([
                                         'target' => 'leaf:/fragments/island-content',
                                         'pattern' => '/fragments/island-content',
                                         'methods' => [
+                                            'OPTIONS',
                                             'GET'
                                         ]
                                     ]), $params);
@@ -519,6 +521,7 @@ return new class implements Router
                             'target' => 'leaf:/fragments/tab',
                             'pattern' => '/fragments/tab/{tab}',
                             'methods' => [
+                                'OPTIONS',
                                 'GET',
                                 'POST'
                             ],
@@ -544,6 +547,7 @@ return new class implements Router
                             'target' => 'leaf:/fragments/island-content',
                             'pattern' => '/fragments/island-content',
                             'methods' => [
+                                'OPTIONS',
                                 'GET'
                             ]
                         ])
