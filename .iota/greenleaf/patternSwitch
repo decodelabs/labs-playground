@@ -426,6 +426,7 @@ return new class implements Router
         }
         
         $groupData = [];
+        
         switch($uri->getPath()) {
             case '/complex-route.php':
                 $groupData = [
@@ -537,96 +538,66 @@ return new class implements Router
                 break;
             
             case '/fragments/island-content':
-                $groupData = [
-                    '/fragments/island-content' => [
-                        'queryKeys' => [
-                        ],
-                        'paramNames' => [
-                        ],
-                        'route' => fn() => Route2::fromArray([
-                            'target' => 'leaf:/fragments/island-content',
-                            'pattern' => '/fragments/island-content',
-                            'methods' => [
-                                'OPTIONS',
-                                'GET'
-                            ]
-                        ])
-                    ]
-                ];
-                break;
+                return new Hit(
+                    route: Route2::fromArray([
+                        'target' => 'leaf:/fragments/island-content',
+                        'pattern' => '/fragments/island-content',
+                        'methods' => [
+                            'OPTIONS',
+                            'GET'
+                        ]
+                    ]),
+                    parameters: [],
+                );
             
             case '/tabs.php':
-                $groupData = [
-                    '/tabs' => [
-                        'queryKeys' => [
-                        ],
-                        'paramNames' => [
-                        ],
-                        'route' => fn() => Route1::fromArray([
-                            'target' => 'leaf:/tabs.php',
-                            'pattern' => '/tabs',
-                            'methods' => [
-                                'GET'
-                            ]
-                        ])
-                    ]
-                ];
-                break;
+                return new Hit(
+                    route: Route1::fromArray([
+                        'target' => 'leaf:/tabs.php',
+                        'pattern' => '/tabs',
+                        'methods' => [
+                            'GET'
+                        ]
+                    ]),
+                    parameters: [],
+                );
             
             case '/slow.php':
-                $groupData = [
-                    '/slow' => [
-                        'queryKeys' => [
-                        ],
-                        'paramNames' => [
-                        ],
-                        'route' => fn() => Route1::fromArray([
-                            'target' => 'leaf:/slow.php',
-                            'pattern' => '/slow',
-                            'methods' => [
-                                'GET'
-                            ]
-                        ])
-                    ]
-                ];
-                break;
+                return new Hit(
+                    route: Route1::fromArray([
+                        'target' => 'leaf:/slow.php',
+                        'pattern' => '/slow',
+                        'methods' => [
+                            'GET'
+                        ]
+                    ]),
+                    parameters: [],
+                );
             
             case '/propagate.php':
-                $groupData = [
-                    '/propagate' => [
-                        'queryKeys' => [
-                        ],
-                        'paramNames' => [
-                        ],
-                        'route' => fn() => Route1::fromArray([
-                            'target' => 'leaf:/propagate.php',
-                            'pattern' => '/propagate',
-                            'methods' => [
-                                'GET'
-                            ]
-                        ])
-                    ]
-                ];
-                break;
+                return new Hit(
+                    route: Route1::fromArray([
+                        'target' => 'leaf:/propagate.php',
+                        'pattern' => '/propagate',
+                        'methods' => [
+                            'GET'
+                        ]
+                    ]),
+                    parameters: [],
+                );
             
             case '/form.php':
-                $groupData = [
-                    '/form' => [
-                        'queryKeys' => [
-                        ],
-                        'paramNames' => [
-                        ],
-                        'route' => fn() => Route1::fromArray([
-                            'target' => 'leaf:/form.php',
-                            'pattern' => '/form',
-                            'methods' => [
-                                'GET',
-                                'POST'
-                            ]
-                        ])
-                    ]
-                ];
-                break;
+                return new Hit(
+                    route: Route1::fromArray([
+                        'target' => 'leaf:/form.php',
+                        'pattern' => '/form',
+                        'methods' => [
+                            'GET',
+                            'POST'
+                        ]
+                    ]),
+                    parameters: [],
+                );
             
             case '/index.php':
                 $groupData = [
@@ -656,32 +627,41 @@ return new class implements Router
             default:
                 return null;
         }
+        
         $origQuery = $uri->parseQuery();
+        
         foreach($groupData as $group) {
             foreach($group['queryKeys'] as $key) {
                 if(!isset($origQuery->{$key})) {
                     continue 2;
                 }
             }
+        
             $query = clone $origQuery;
             $params = [];
+        
             foreach($query as $key => $node) {
                 if(!is_string($key) || !$node->hasValue()) {
                     continue;
                 }
+        
                 if(in_array($key, $group['queryKeys'])) {
                     unset($query->{$key});
                     continue;
                 }
+        
                 if(in_array($key, $group['paramNames'])) {
                     $params[$key] = $node->getValue();
                     unset($query->{$key});
                     continue;
                 }
+        
                 continue 2;
             }
+        
             $params = array_merge($params, $parameters);
             $route = $group['route']();
+        
             foreach($route->parameters as $name => $parameter) {
                 if(isset($params[$name])) {
                     continue;
@@ -694,6 +674,13 @@ return new class implements Router
         
                 continue 2;
             }
+        
+            foreach($params as $name => $value) {
+                if(!array_key_exists($name, $route->parameters)) {
+                    $query->{$name} = $value;
+                }
+            }
+        
             return new Hit($route, $params, $query->toDelimitedString());
         }
         return null;;

@@ -32,13 +32,13 @@ return function () {
 
         yield Html::{'a'}(
             content: 'Slow page',
-            href: '/slow',
+            href: Greenleaf::url('slow.php'),
             loading: 'page-load'
         );
 
         yield Html::{'a'}(
             content: 'Tabs test',
-            href: '/tabs'
+            href: Greenleaf::url('tabs.php')
         );
     });
 };
