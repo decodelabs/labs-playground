@@ -28,6 +28,7 @@ return [
         ],
         'parameters' => [
             'tab' => [
+                'type' => 'slug',
                 'name' => 'tab',
                 'default' => null
             ]

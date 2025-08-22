@@ -11,12 +11,13 @@
     "require": {
         "php": "^8.4",
         "decodelabs/exceptional": "^0.6",
-        "decodelabs/fabric": "^0.8",
-        "decodelabs/greenleaf": "^0.9",
-        "decodelabs/harvest": "^0.6",
-        "decodelabs/horizon": "^0.4.2",
-        "decodelabs/tagged": "^0.20",
-        "decodelabs/zest": "^0.8"
+        "decodelabs/fabric": "^0.9",
+        "decodelabs/greenleaf": "^0.10",
+        "decodelabs/harvest": "^0.7",
+        "decodelabs/horizon": "^0.5",
+        "decodelabs/kingdom": "^0.1",
+        "decodelabs/tagged": "^0.21",
+        "decodelabs/zest": "^0.9"
     },
     "require-dev": {
         "decodelabs/phpstan-decodelabs": "^0.7.0"

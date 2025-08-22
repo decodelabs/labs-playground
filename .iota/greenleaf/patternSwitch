@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Greenleaf\Router;
 
+use DecodeLabs\Archetype as Archetype;
 use DecodeLabs\Greenleaf\Route\Action as Route2;
 use DecodeLabs\Greenleaf\Route\Hit as Hit;
 use DecodeLabs\Greenleaf\Route\Page as Route1;
@@ -15,6 +16,8 @@ use Throwable as Throwable;
 
 return new class implements Router
 {
+    public Archetype $archetype;
+
     public function matchIn(
         PsrRequest $request
     ): ?Hit {
@@ -50,7 +53,7 @@ return new class implements Router
                                 'default' => 'hello'
                             ]
                         ]
-                    ]);
+                    ], $this->archetype);
                     
                     foreach($potentialRoute->parameters as $parameter) {
                         if(!$parameter->validate($params[$parameter->name])) {
@@ -113,7 +116,7 @@ return new class implements Router
                                                         'default' => null
                                                     ]
                                                 ]
-                                            ]);
+                                            ], $this->archetype);
                                             
                                             foreach($potentialRoute->parameters as $parameter) {
                                                 if(!$parameter->validate($params[$parameter->name])) {
@@ -172,7 +175,7 @@ return new class implements Router
                                             'default' => 'default'
                                         ]
                                     ]
-                                ]);
+                                ], $this->archetype);
                                 
                                 foreach($potentialRoute->parameters as $parameter) {
                                     if(!$parameter->validate($params[$parameter->name])) {
@@ -232,7 +235,7 @@ return new class implements Router
                                                     'default' => '1'
                                                 ]
                                             ]
-                                        ]);
+                                        ], $this->archetype);
                                         
                                         foreach($potentialRoute->parameters as $parameter) {
                                             if(!$parameter->validate($params[$parameter->name])) {
@@ -267,7 +270,7 @@ return new class implements Router
                                             'OPTIONS',
                                             'GET'
                                         ]
-                                    ]), $params);
+                                    ], $this->archetype), $params);
                                 }
                             
                                 return null;
@@ -291,7 +294,7 @@ return new class implements Router
                                 'methods' => [
                                     'GET'
                                 ]
-                            ]), $params);
+                            ], $this->archetype), $params);
                         }
                     
                         return null;
@@ -310,7 +313,7 @@ return new class implements Router
                                 'methods' => [
                                     'GET'
                                 ]
-                            ]), $params);
+                            ], $this->archetype), $params);
                         }
                     
                         return null;
@@ -329,7 +332,7 @@ return new class implements Router
                                 'methods' => [
                                     'GET'
                                 ]
-                            ]), $params);
+                            ], $this->archetype), $params);
                         }
                     
                         return null;
@@ -349,7 +352,7 @@ return new class implements Router
                                     'GET',
                                     'POST'
                                 ]
-                            ]), $params);
+                            ], $this->archetype), $params);
                         }
                     
                         return null;
@@ -384,7 +387,7 @@ return new class implements Router
                                             'default' => null
                                         ]
                                     ]
-                                ]);
+                                ], $this->archetype);
                                 
                                 foreach($potentialRoute->parameters as $parameter) {
                                     if(!$parameter->validate($params[$parameter->name])) {
@@ -453,7 +456,7 @@ return new class implements Router
                                     'default' => null
                                 ]
                             ]
-                        ])
+                        ], $this->archetype)
                     ],
                     '/test/{part1}' => [
                         'queryKeys' => [
@@ -479,7 +482,7 @@ return new class implements Router
                                     'default' => 'default'
                                 ]
                             ]
-                        ])
+                        ], $this->archetype)
                     ],
                     '/test-{part1}-{part2}' => [
                         'queryKeys' => [
@@ -505,7 +508,7 @@ return new class implements Router
                                     'default' => null
                                 ]
                             ]
-                        ])
+                        ], $this->archetype)
                     ]
                 ];
                 break;
@@ -532,7 +535,7 @@ return new class implements Router
                                     'default' => '1'
                                 ]
                             ]
-                        ])
+                        ], $this->archetype)
                     ]
                 ];
                 break;
@@ -546,7 +549,7 @@ return new class implements Router
                             'OPTIONS',
                             'GET'
                         ]
-                    ]),
+                    ], $this->archetype),
                     parameters: [],
                 );
             
@@ -558,7 +561,7 @@ return new class implements Router
                         'methods' => [
                             'GET'
                         ]
-                    ]),
+                    ], $this->archetype),
                     parameters: [],
                 );
             
@@ -570,7 +573,7 @@ return new class implements Router
                         'methods' => [
                             'GET'
                         ]
-                    ]),
+                    ], $this->archetype),
                     parameters: [],
                 );
             
@@ -582,7 +585,7 @@ return new class implements Router
                         'methods' => [
                             'GET'
                         ]
-                    ]),
+                    ], $this->archetype),
                     parameters: [],
                 );
             
@@ -595,7 +598,7 @@ return new class implements Router
                             'GET',
                             'POST'
                         ]
-                    ]),
+                    ], $this->archetype),
                     parameters: [],
                 );
             
@@ -619,7 +622,7 @@ return new class implements Router
                                     'default' => 'hello'
                                 ]
                             ]
-                        ])
+                        ], $this->archetype)
                     ]
                 ];
                 break;

@@ -1,6 +1,7 @@
 <?php
 
 use DecodeLabs\Horizon\Page;
+use DecodeLabs\Monarch;
 use DecodeLabs\Tagged as Html;
 
 /**
@@ -44,6 +45,6 @@ return function (
 
         yield Html::{'page-island'}($content);
         yield Html::{'template#page-load'}('Loading...');
-        yield Html::footer('FOOTER');
+        yield Html::footer(['FOOTER : ', Monarch::getRunTimeFormatted()]);
     });
 };
