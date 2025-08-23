@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @package Songsprout API
+ * @package Labs Playground
  * @license http://opensource.org/licenses/MIT
  */
 

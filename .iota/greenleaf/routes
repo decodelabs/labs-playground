@@ -79,6 +79,21 @@ return [
         ]
     ],
     [
+        'target' => 'leaf:/error/handle',
+        'class' => 'DecodeLabs\\Greenleaf\\Route\\Action',
+        'pattern' => '/error/{code}',
+        'methods' => [
+            'OPTIONS',
+            'GET'
+        ],
+        'parameters' => [
+            'code' => [
+                'name' => 'code',
+                'default' => null
+            ]
+        ]
+    ],
+    [
         'target' => 'leaf:/complex-route.php?linear',
         'class' => 'DecodeLabs\\Greenleaf\\Route\\Page',
         'pattern' => '/test-{part1}-{part2}',

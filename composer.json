@@ -11,7 +11,7 @@
     "require": {
         "php": "^8.4",
         "decodelabs/exceptional": "^0.6",
-        "decodelabs/fabric": "^0.9",
+        "decodelabs/fabric": "^0.10",
         "decodelabs/greenleaf": "^0.10",
         "decodelabs/harvest": "^0.7",
         "decodelabs/horizon": "^0.5",
@@ -28,6 +28,9 @@
         }
     },
     "extra": {
+        "genesis": {
+            "hub": "DecodeLabs\\Fabric\\Genesis\\Hub"
+        },
         "effigy": {
             "entry": "src/Bootstrap.php",
             "codeDirs": [
@@ -47,7 +50,8 @@
     },
     "config": {
         "allow-plugins": {
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "decodelabs/genesis": true
         }
     },
     "minimum-stability": "dev",

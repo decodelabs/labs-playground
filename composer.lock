@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34f8b65414b084b3c34a7140739b9625",
+    "content-hash": "ebcf3bf6f3ccb26ab7abe2e907732933",
     "packages": [
         {
             "name": "brick/math",
@@ -258,16 +258,16 @@
         },
         {
             "name": "decodelabs/clip",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/clip.git",
-                "reference": "ca252ed72aea16c51d3bbe254e50853d8c2b1f9a"
+                "reference": "fad6c1b081a5cb00c35b1b40adb873b28a7c6cff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/clip/zipball/ca252ed72aea16c51d3bbe254e50853d8c2b1f9a",
-                "reference": "ca252ed72aea16c51d3bbe254e50853d8c2b1f9a",
+                "url": "https://api.github.com/repos/decodelabs/clip/zipball/fad6c1b081a5cb00c35b1b40adb873b28a7c6cff",
+                "reference": "fad6c1b081a5cb00c35b1b40adb873b28a7c6cff",
                 "shasum": ""
             },
             "require": {
@@ -278,8 +278,7 @@
                 "decodelabs/commandment": "^0.3",
                 "decodelabs/dictum": "^0.7",
                 "decodelabs/exceptional": "^0.6.3",
-                "decodelabs/fluidity": "^0.3.7",
-                "decodelabs/genesis": "^0.13",
+                "decodelabs/genesis": "^0.14",
                 "decodelabs/glitch": "^0.21",
                 "decodelabs/hatch": "^0.1.4",
                 "decodelabs/kingdom": "^0.1",
@@ -293,6 +292,9 @@
             },
             "type": "library",
             "extra": {
+                "genesis": {
+                    "hub": "DecodeLabs\\Clip\\Hub"
+                },
                 "branch-alias": {
                     "dev-develop": "0.6.x-dev"
                 }
@@ -319,9 +321,9 @@
             "description": "CLI kernel integration for DecodeLabs Genesis",
             "support": {
                 "issues": "https://github.com/decodelabs/clip/issues",
-                "source": "https://github.com/decodelabs/clip/tree/v0.6.0"
+                "source": "https://github.com/decodelabs/clip/tree/v0.6.1"
             },
-            "time": "2025-08-21T13:48:17+00:00"
+            "time": "2025-08-23T09:12:10+00:00"
         },
         {
             "name": "decodelabs/coercion",
@@ -738,16 +740,16 @@
         },
         {
             "name": "decodelabs/dovetail",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/dovetail.git",
-                "reference": "ecfea2d64012629c44520deef84a2a7b06ac43a8"
+                "reference": "e835a506877d3ce36aef7db6911a2fcc9851bec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/dovetail/zipball/ecfea2d64012629c44520deef84a2a7b06ac43a8",
-                "reference": "ecfea2d64012629c44520deef84a2a7b06ac43a8",
+                "url": "https://api.github.com/repos/decodelabs/dovetail/zipball/e835a506877d3ce36aef7db6911a2fcc9851bec5",
+                "reference": "e835a506877d3ce36aef7db6911a2fcc9851bec5",
                 "shasum": ""
             },
             "require": {
@@ -765,10 +767,10 @@
                 "vlucas/phpdotenv": "^5.6.2"
             },
             "conflict": {
-                "decodelabs/genesis": "<0.13"
+                "decodelabs/genesis": "<0.14"
             },
             "require-dev": {
-                "decodelabs/genesis": "^0.13",
+                "decodelabs/genesis": "^0.14",
                 "decodelabs/phpstan-decodelabs": "^0.7"
             },
             "type": "library",
@@ -799,22 +801,22 @@
             "description": "Comprehensive config solution",
             "support": {
                 "issues": "https://github.com/decodelabs/dovetail/issues",
-                "source": "https://github.com/decodelabs/dovetail/tree/v0.3.1"
+                "source": "https://github.com/decodelabs/dovetail/tree/v0.3.2"
             },
-            "time": "2025-08-21T20:05:29+00:00"
+            "time": "2025-08-23T09:05:00+00:00"
         },
         {
             "name": "decodelabs/elementary",
-            "version": "v0.6.3",
+            "version": "v0.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/elementary.git",
-                "reference": "b8cd6f19a8120ed731611e50ea0015ce75acb3c7"
+                "reference": "2b8bf9fe01d2bf53b8192787dd01ea34887e3438"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/b8cd6f19a8120ed731611e50ea0015ce75acb3c7",
-                "reference": "b8cd6f19a8120ed731611e50ea0015ce75acb3c7",
+                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/2b8bf9fe01d2bf53b8192787dd01ea34887e3438",
+                "reference": "2b8bf9fe01d2bf53b8192787dd01ea34887e3438",
                 "shasum": ""
             },
             "require": {
@@ -856,9 +858,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/elementary/issues",
-                "source": "https://github.com/decodelabs/elementary/tree/v0.6.3"
+                "source": "https://github.com/decodelabs/elementary/tree/v0.6.4"
             },
-            "time": "2025-08-21T07:47:13+00:00"
+            "time": "2025-08-23T07:59:35+00:00"
         },
         {
             "name": "decodelabs/enlighten",
@@ -1097,16 +1099,16 @@
         },
         {
             "name": "decodelabs/fabric",
-            "version": "v0.9.0",
+            "version": "v0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/fabric.git",
-                "reference": "b4f01908ed094c2dea12e8b2bcf25bb88aea031e"
+                "reference": "c5084e0aed05f57d6fe478d8962fa853d2f6878c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/b4f01908ed094c2dea12e8b2bcf25bb88aea031e",
-                "reference": "b4f01908ed094c2dea12e8b2bcf25bb88aea031e",
+                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/c5084e0aed05f57d6fe478d8962fa853d2f6878c",
+                "reference": "c5084e0aed05f57d6fe478d8962fa853d2f6878c",
                 "shasum": ""
             },
             "require": {
@@ -1116,7 +1118,7 @@
                 "decodelabs/commandment": "^0.3",
                 "decodelabs/dovetail": "^0.3.1",
                 "decodelabs/exceptional": "^0.6.3",
-                "decodelabs/genesis": "^0.13",
+                "decodelabs/genesis": "^0.14",
                 "decodelabs/glitch": "^0.21",
                 "decodelabs/greenleaf": "^0.10",
                 "decodelabs/harvest": "^0.7",
@@ -1136,8 +1138,11 @@
             },
             "type": "library",
             "extra": {
+                "genesis": {
+                    "hub": "DecodeLabs\\Fabric\\Genesis\\Hub"
+                },
                 "branch-alias": {
-                    "dev-develop": "0.9.x-dev"
+                    "dev-develop": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -1158,9 +1163,9 @@
             "description": "Lightweight PHP framework implementation using DecodeLabs ecosystem",
             "support": {
                 "issues": "https://github.com/decodelabs/fabric/issues",
-                "source": "https://github.com/decodelabs/fabric/tree/v0.9.0"
+                "source": "https://github.com/decodelabs/fabric/tree/v0.10.0"
             },
-            "time": "2025-08-21T22:32:39+00:00"
+            "time": "2025-08-23T21:00:56+00:00"
         },
         {
             "name": "decodelabs/fluidity",
@@ -1218,23 +1223,23 @@
         },
         {
             "name": "decodelabs/genesis",
-            "version": "v0.13.0",
+            "version": "v0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/genesis.git",
-                "reference": "a9f806c561ca170fa5751c313c1e9d3039d30698"
+                "reference": "9ed948f433c6c2e7f32955614b163cd5ce0b57a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/genesis/zipball/a9f806c561ca170fa5751c313c1e9d3039d30698",
-                "reference": "a9f806c561ca170fa5751c313c1e9d3039d30698",
+                "url": "https://api.github.com/repos/decodelabs/genesis/zipball/9ed948f433c6c2e7f32955614b163cd5ce0b57a4",
+                "reference": "9ed948f433c6c2e7f32955614b163cd5ce0b57a4",
                 "shasum": ""
             },
             "require": {
+                "composer-plugin-api": "^2.0",
                 "decodelabs/archetype": "^0.4",
                 "decodelabs/atlas": "^0.14",
                 "decodelabs/exceptional": "^0.6.3",
-                "decodelabs/fluidity": "^0.3.7",
                 "decodelabs/kingdom": "^0.1",
                 "decodelabs/monarch": "^0.2",
                 "decodelabs/slingshot": "^0.3",
@@ -1242,12 +1247,16 @@
                 "php": "^8.4"
             },
             "require-dev": {
-                "decodelabs/phpstan-decodelabs": "^0.7"
+                "composer/composer": "^2.0",
+                "decodelabs/commandment": "^0.3.0",
+                "decodelabs/phpstan-decodelabs": "^0.7",
+                "decodelabs/systemic": "^0.12.0"
             },
-            "type": "library",
+            "type": "composer-plugin",
             "extra": {
+                "class": "DecodeLabs\\Genesis\\Composer\\Plugin",
                 "branch-alias": {
-                    "dev-develop": "0.13.x-dev"
+                    "dev-develop": "0.14.x-dev"
                 }
             },
             "autoload": {
@@ -1255,7 +1264,8 @@
                     "DecodeLabs\\Genesis\\": "src/Genesis/"
                 },
                 "classmap": [
-                    "src/Genesis.php"
+                    "src/Genesis.php",
+                    "src/Commandment/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1276,9 +1286,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/genesis/issues",
-                "source": "https://github.com/decodelabs/genesis/tree/v0.13.0"
+                "source": "https://github.com/decodelabs/genesis/tree/v0.14.0"
             },
-            "time": "2025-08-21T11:34:52+00:00"
+            "time": "2025-08-23T09:01:09+00:00"
         },
         {
             "name": "decodelabs/glitch",
@@ -1642,32 +1652,32 @@
         },
         {
             "name": "decodelabs/iota",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/iota.git",
-                "reference": "21564f4143bbf56380dae657560a298239a14fa2"
+                "reference": "33984f08c954a964d00caa52e4003b949ea47118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/iota/zipball/21564f4143bbf56380dae657560a298239a14fa2",
-                "reference": "21564f4143bbf56380dae657560a298239a14fa2",
+                "url": "https://api.github.com/repos/decodelabs/iota/zipball/33984f08c954a964d00caa52e4003b949ea47118",
+                "reference": "33984f08c954a964d00caa52e4003b949ea47118",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/atlas": "^0.14",
                 "decodelabs/coercion": "^0.3.3",
                 "decodelabs/exceptional": "^0.6.1",
-                "decodelabs/hatch": "^0.1.3",
+                "decodelabs/hatch": "^0.1.4",
                 "decodelabs/kingdom": "^0.1",
                 "decodelabs/monarch": "^0.2",
                 "php": "^8.4"
             },
             "conflict": {
-                "decodelabs/genesis": "<0.13"
+                "decodelabs/genesis": "<0.14"
             },
             "require-dev": {
-                "decodelabs/genesis": "^0.13",
+                "decodelabs/genesis": "^0.14",
                 "decodelabs/phpstan-decodelabs": "^0.7.0"
             },
             "type": "library",
@@ -1698,9 +1708,9 @@
             "description": "Discrete, dependable generated code repository",
             "support": {
                 "issues": "https://github.com/decodelabs/iota/issues",
-                "source": "https://github.com/decodelabs/iota/tree/v0.3.0"
+                "source": "https://github.com/decodelabs/iota/tree/v0.3.1"
             },
-            "time": "2025-08-21T11:43:17+00:00"
+            "time": "2025-08-23T09:06:29+00:00"
         },
         {
             "name": "decodelabs/kingdom",
@@ -2229,16 +2239,16 @@
         },
         {
             "name": "decodelabs/slingshot",
-            "version": "v0.3.0",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/slingshot.git",
-                "reference": "91e3e0a6cfdbea25285a71bb66272dc46f83c105"
+                "reference": "4d1a59a3854aa3f9caa25abdb741840eca623c4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/slingshot/zipball/91e3e0a6cfdbea25285a71bb66272dc46f83c105",
-                "reference": "91e3e0a6cfdbea25285a71bb66272dc46f83c105",
+                "url": "https://api.github.com/repos/decodelabs/slingshot/zipball/4d1a59a3854aa3f9caa25abdb741840eca623c4f",
+                "reference": "4d1a59a3854aa3f9caa25abdb741840eca623c4f",
                 "shasum": ""
             },
             "require": {
@@ -2276,9 +2286,9 @@
             "description": "Unified dependency injection invoker",
             "support": {
                 "issues": "https://github.com/decodelabs/slingshot/issues",
-                "source": "https://github.com/decodelabs/slingshot/tree/v0.3.0"
+                "source": "https://github.com/decodelabs/slingshot/tree/v0.3.2"
             },
-            "time": "2025-08-21T08:16:59+00:00"
+            "time": "2025-08-23T08:04:37+00:00"
         },
         {
             "name": "decodelabs/systemic",
@@ -2607,16 +2617,16 @@
         },
         {
             "name": "decodelabs/zest",
-            "version": "v0.9.0",
+            "version": "v0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/zest.git",
-                "reference": "68abfa7aa6ac85bc26fea54a27fe9c4a2cf00e41"
+                "reference": "f78204e8b479d49d29fbb40701193cd9cff6c740"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/zest/zipball/68abfa7aa6ac85bc26fea54a27fe9c4a2cf00e41",
-                "reference": "68abfa7aa6ac85bc26fea54a27fe9c4a2cf00e41",
+                "url": "https://api.github.com/repos/decodelabs/zest/zipball/f78204e8b479d49d29fbb40701193cd9cff6c740",
+                "reference": "f78204e8b479d49d29fbb40701193cd9cff6c740",
                 "shasum": ""
             },
             "require": {
@@ -2626,7 +2636,7 @@
                 "decodelabs/collections": "^0.12",
                 "decodelabs/commandment": "^0.3",
                 "decodelabs/exceptional": "^0.6.3",
-                "decodelabs/genesis": "^0.13",
+                "decodelabs/genesis": "^0.14",
                 "decodelabs/hatch": "^0.1.4",
                 "decodelabs/iota": "^0.3",
                 "decodelabs/lucid": "^0.6",
@@ -2651,6 +2661,9 @@
             ],
             "type": "library",
             "extra": {
+                "genesis": {
+                    "hub": "DecodeLabs\\Zest\\Hub"
+                },
                 "branch-alias": {
                     "dev-develop": "0.9.x-dev"
                 }
@@ -2683,9 +2696,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/zest/issues",
-                "source": "https://github.com/decodelabs/zest/tree/v0.9.0"
+                "source": "https://github.com/decodelabs/zest/tree/v0.9.1"
             },
-            "time": "2025-08-21T22:27:42+00:00"
+            "time": "2025-08-23T20:58:05+00:00"
         },
         {
             "name": "graham-campbell/result-type",

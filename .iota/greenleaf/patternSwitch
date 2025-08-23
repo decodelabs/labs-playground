@@ -283,6 +283,55 @@ return new class implements Router
                     }
                     break;
                 
+                case 'error':
+                    $part = array_shift($parts);
+                    
+                    if($part === null) {
+                            return null;
+                    }
+                    if (preg_match('/^(?P<code>\w+)$/', $part, $matches)) {
+                        $params['code'] = $matches['code'];
+                        $part = array_shift($parts);
+                        
+                        if($part === null) {
+                            if(in_array($method, ['OPTIONS', 'GET'])) {
+                                $valid = true;
+                                $potentialRoute = Route2::fromArray([
+                                    'target' => 'leaf:/error/handle',
+                                    'pattern' => '/error/{code}',
+                                    'methods' => [
+                                        'OPTIONS',
+                                        'GET'
+                                    ],
+                                    'parameters' => [
+                                        'code' => [
+                                            'name' => 'code',
+                                            'default' => null
+                                        ]
+                                    ]
+                                ], $this->archetype);
+                                
+                                foreach($potentialRoute->parameters as $parameter) {
+                                    if(!$parameter->validate($params[$parameter->name])) {
+                                        $valid = false;
+                                        break;
+                                    }
+                                
+                                    $params[$parameter->name] = $parameter->resolve($params[$parameter->name]);
+                                }
+                                
+                                if($valid) {
+                                    return new Hit($potentialRoute, $params);
+                                }
+                            }
+                        
+                            return null;
+                        }
+                        return null;
+                    }
+                    return null;
+                    break;
+                
                 case 'tabs':
                     $part = array_shift($parts);
                     
@@ -552,6 +601,32 @@ return new class implements Router
                     ], $this->archetype),
                     parameters: [],
                 );
+            
+            case '/error/handle':
+                $groupData = [
+                    '/error/{code}' => [
+                        'queryKeys' => [
+                        ],
+                        'paramNames' => [
+                            'code'
+                        ],
+                        'route' => fn() => Route2::fromArray([
+                            'target' => 'leaf:/error/handle',
+                            'pattern' => '/error/{code}',
+                            'methods' => [
+                                'OPTIONS',
+                                'GET'
+                            ],
+                            'parameters' => [
+                                'code' => [
+                                    'name' => 'code',
+                                    'default' => null
+                                ]
+                            ]
+                        ], $this->archetype)
+                    ]
+                ];
+                break;
             
             case '/tabs.php':
                 return new Hit(
