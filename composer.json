@@ -32,7 +32,7 @@
             "hub": "DecodeLabs\\Fabric\\Genesis\\Hub"
         },
         "effigy": {
-            "entry": "src/Bootstrap.php",
+            "entry": "vendor/genesis.php",
             "codeDirs": [
                 "config",
                 "src"

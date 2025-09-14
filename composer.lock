@@ -1223,16 +1223,16 @@
         },
         {
             "name": "decodelabs/genesis",
-            "version": "v0.14.6",
+            "version": "v0.14.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/genesis.git",
-                "reference": "9da53db7ae08080c22d6487742c2db3534e94b8b"
+                "reference": "6ff136cfb76c27c90a0f741d21a714627ebae5e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/genesis/zipball/9da53db7ae08080c22d6487742c2db3534e94b8b",
-                "reference": "9da53db7ae08080c22d6487742c2db3534e94b8b",
+                "url": "https://api.github.com/repos/decodelabs/genesis/zipball/6ff136cfb76c27c90a0f741d21a714627ebae5e4",
+                "reference": "6ff136cfb76c27c90a0f741d21a714627ebae5e4",
                 "shasum": ""
             },
             "require": {
@@ -1243,14 +1243,14 @@
                 "decodelabs/kingdom": "^0.2",
                 "decodelabs/monarch": "^0.2",
                 "decodelabs/slingshot": "^0.3",
+                "decodelabs/systemic": "^0.12.0",
                 "decodelabs/terminus": "^0.14",
                 "php": "^8.4"
             },
             "require-dev": {
                 "composer/composer": "^2.0",
                 "decodelabs/commandment": "^0.3.0",
-                "decodelabs/phpstan-decodelabs": "^0.7",
-                "decodelabs/systemic": "^0.12.0"
+                "decodelabs/phpstan-decodelabs": "^0.7"
             },
             "type": "composer-plugin",
             "extra": {
@@ -1286,9 +1286,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/genesis/issues",
-                "source": "https://github.com/decodelabs/genesis/tree/v0.14.6"
+                "source": "https://github.com/decodelabs/genesis/tree/v0.14.7"
             },
-            "time": "2025-09-10T14:14:04+00:00"
+            "time": "2025-09-14T16:34:23+00:00"
         },
         {
             "name": "decodelabs/glitch",
@@ -4157,16 +4157,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.23",
+            "version": "2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5"
+                "reference": "4087d28bd252895874e174d65e26b2c202ed893a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
-                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4087d28bd252895874e174d65e26b2c202ed893a",
+                "reference": "4087d28bd252895874e174d65e26b2c202ed893a",
                 "shasum": ""
             },
             "require": {
@@ -4211,7 +4211,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-10T11:42:22+00:00"
+            "time": "2025-09-12T14:26:42+00:00"
         }
     ],
     "aliases": [],
