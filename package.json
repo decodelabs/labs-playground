@@ -8,6 +8,10 @@
         "build": "vite build",
         "preview": "vite preview"
     },
+    "engines": {
+        "npm": "please-use-pnpm",
+        "pnpm": ">= 2.0.0"
+    },
     "dependencies": {
         "@decodelabs/castaway": "^0.1.1",
         "react": "^19.1.1",
@@ -25,7 +29,7 @@
     },
     "postcss": {
         "plugins": {
-            "postcss-preset-env": {}
+            "postcss-preset-env": { }
         }
     }
 }
