@@ -258,16 +258,16 @@
         },
         {
             "name": "decodelabs/clip",
-            "version": "v0.6.2",
+            "version": "v0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/clip.git",
-                "reference": "d1ef723a0f0fb2e03e574b288730f4e746f42a7b"
+                "reference": "3d80e7844f469f9f10060f0a4ce9fded63875ab5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/clip/zipball/d1ef723a0f0fb2e03e574b288730f4e746f42a7b",
-                "reference": "d1ef723a0f0fb2e03e574b288730f4e746f42a7b",
+                "url": "https://api.github.com/repos/decodelabs/clip/zipball/3d80e7844f469f9f10060f0a4ce9fded63875ab5",
+                "reference": "3d80e7844f469f9f10060f0a4ce9fded63875ab5",
                 "shasum": ""
             },
             "require": {
@@ -321,9 +321,9 @@
             "description": "CLI kernel integration for DecodeLabs Genesis",
             "support": {
                 "issues": "https://github.com/decodelabs/clip/issues",
-                "source": "https://github.com/decodelabs/clip/tree/v0.6.2"
+                "source": "https://github.com/decodelabs/clip/tree/v0.6.3"
             },
-            "time": "2025-09-10T14:20:00+00:00"
+            "time": "2025-09-16T21:02:42+00:00"
         },
         {
             "name": "decodelabs/coercion",
@@ -1099,16 +1099,16 @@
         },
         {
             "name": "decodelabs/fabric",
-            "version": "v0.10.2",
+            "version": "v0.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/fabric.git",
-                "reference": "ccc715aa879258374fae29e82d0fac515cbd2f4e"
+                "reference": "54a626a8e2f6477f7854e85dd97912135e51e6f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/ccc715aa879258374fae29e82d0fac515cbd2f4e",
-                "reference": "ccc715aa879258374fae29e82d0fac515cbd2f4e",
+                "url": "https://api.github.com/repos/decodelabs/fabric/zipball/54a626a8e2f6477f7854e85dd97912135e51e6f6",
+                "reference": "54a626a8e2f6477f7854e85dd97912135e51e6f6",
                 "shasum": ""
             },
             "require": {
@@ -1130,11 +1130,11 @@
                 "php": "^8.4"
             },
             "conflict": {
-                "decodelabs/stash": "<0.7"
+                "decodelabs/stash": "<0.8"
             },
             "require-dev": {
                 "decodelabs/phpstan-decodelabs": "^0.7",
-                "decodelabs/stash": "^0.7"
+                "decodelabs/stash": "^0.8"
             },
             "type": "library",
             "extra": {
@@ -1163,9 +1163,9 @@
             "description": "Lightweight PHP framework implementation using DecodeLabs ecosystem",
             "support": {
                 "issues": "https://github.com/decodelabs/fabric/issues",
-                "source": "https://github.com/decodelabs/fabric/tree/v0.10.2"
+                "source": "https://github.com/decodelabs/fabric/tree/v0.10.3"
             },
-            "time": "2025-09-10T14:32:26+00:00"
+            "time": "2025-09-16T16:10:54+00:00"
         },
         {
             "name": "decodelabs/fluidity",
@@ -4157,16 +4157,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.25",
+            "version": "2.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "4087d28bd252895874e174d65e26b2c202ed893a"
+                "reference": "25da374959afa391992792691093550b3098ef1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4087d28bd252895874e174d65e26b2c202ed893a",
-                "reference": "4087d28bd252895874e174d65e26b2c202ed893a",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/25da374959afa391992792691093550b3098ef1e",
+                "reference": "25da374959afa391992792691093550b3098ef1e",
                 "shasum": ""
             },
             "require": {
@@ -4211,7 +4211,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-12T14:26:42+00:00"
+            "time": "2025-09-17T09:55:13+00:00"
         }
     ],
     "aliases": [],
