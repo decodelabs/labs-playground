@@ -15,6 +15,8 @@ Try out and play with a working Fabric app.
 
 ## Installation
 
+This package requires PHP 8.4 or higher.
+
 Install via Composer:
 
 ```bash
