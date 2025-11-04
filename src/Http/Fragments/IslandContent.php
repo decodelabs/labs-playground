@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @package Labs Playground
- * @license http://opensource.org/licenses/MIT
+ * Labs Playground
+ * @license https://opensource.org/licenses/MIT
  */
 
 declare(strict_types=1);

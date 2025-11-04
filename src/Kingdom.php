@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @package DecodeLabs Playground
- * @license http://opensource.org/licenses/MIT
+ * DecodeLabs Playground
+ * @license https://opensource.org/licenses/MIT
  */
 
 declare(strict_types=1);

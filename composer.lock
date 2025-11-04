@@ -258,16 +258,16 @@
         },
         {
             "name": "decodelabs/clip",
-            "version": "v0.6.7",
+            "version": "v0.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/clip.git",
-                "reference": "6712488d2c8b3ce5ae8a451810288bc8ec20bf5d"
+                "reference": "5ad750f3d3f8c94b01dca6e3042518053da42296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/clip/zipball/6712488d2c8b3ce5ae8a451810288bc8ec20bf5d",
-                "reference": "6712488d2c8b3ce5ae8a451810288bc8ec20bf5d",
+                "url": "https://api.github.com/repos/decodelabs/clip/zipball/5ad750f3d3f8c94b01dca6e3042518053da42296",
+                "reference": "5ad750f3d3f8c94b01dca6e3042518053da42296",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +281,7 @@
                 "decodelabs/glitch": "^0.22",
                 "decodelabs/hatch": "^0.1.4",
                 "decodelabs/kingdom": "^0.2",
-                "decodelabs/monarch": "^0.2",
+                "decodelabs/monarch": "^0.2.3",
                 "decodelabs/pandora": "^0.4",
                 "decodelabs/terminus": "^0.14",
                 "php": "^8.4"
@@ -320,9 +320,9 @@
             "description": "CLI kernel integration for DecodeLabs Genesis",
             "support": {
                 "issues": "https://github.com/decodelabs/clip/issues",
-                "source": "https://github.com/decodelabs/clip/tree/v0.6.7"
+                "source": "https://github.com/decodelabs/clip/tree/v0.6.8"
             },
-            "time": "2025-10-03T15:32:54+00:00"
+            "time": "2025-10-07T08:48:47+00:00"
         },
         {
             "name": "decodelabs/coercion",
@@ -744,16 +744,16 @@
         },
         {
             "name": "decodelabs/dovetail",
-            "version": "v0.3.5",
+            "version": "v0.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/dovetail.git",
-                "reference": "5280cc36a8763e68b727a19d75d2e0ca6c464921"
+                "reference": "b1f1423ba76f637c6f32691f29b7f4e04e585b9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/dovetail/zipball/5280cc36a8763e68b727a19d75d2e0ca6c464921",
-                "reference": "5280cc36a8763e68b727a19d75d2e0ca6c464921",
+                "url": "https://api.github.com/repos/decodelabs/dovetail/zipball/b1f1423ba76f637c6f32691f29b7f4e04e585b9d",
+                "reference": "b1f1423ba76f637c6f32691f29b7f4e04e585b9d",
                 "shasum": ""
             },
             "require": {
@@ -805,9 +805,9 @@
             "description": "Comprehensive config solution",
             "support": {
                 "issues": "https://github.com/decodelabs/dovetail/issues",
-                "source": "https://github.com/decodelabs/dovetail/tree/v0.3.5"
+                "source": "https://github.com/decodelabs/dovetail/tree/v0.3.6"
             },
-            "time": "2025-09-19T10:18:10+00:00"
+            "time": "2025-10-07T08:44:40+00:00"
         },
         {
             "name": "decodelabs/elementary",
@@ -1033,21 +1033,21 @@
         },
         {
             "name": "decodelabs/exceptional",
-            "version": "v0.6.4",
+            "version": "v0.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/exceptional.git",
-                "reference": "037c132f418e34416e5996e08e57a9c49eeca035"
+                "reference": "84696d0a2765bd3c52256332da4459dd8f5081ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/exceptional/zipball/037c132f418e34416e5996e08e57a9c49eeca035",
-                "reference": "037c132f418e34416e5996e08e57a9c49eeca035",
+                "url": "https://api.github.com/repos/decodelabs/exceptional/zipball/84696d0a2765bd3c52256332da4459dd8f5081ea",
+                "reference": "84696d0a2765bd3c52256332da4459dd8f5081ea",
                 "shasum": ""
             },
             "require": {
                 "decodelabs/remnant": "^0.2.1",
-                "decodelabs/wellspring": "^0.1.2",
+                "decodelabs/wellspring": "^0.2",
                 "php": "^8.4",
                 "symfony/polyfill-mbstring": "^1.31"
             },
@@ -1097,9 +1097,9 @@
             ],
             "support": {
                 "issues": "https://github.com/decodelabs/exceptional/issues",
-                "source": "https://github.com/decodelabs/exceptional/tree/v0.6.4"
+                "source": "https://github.com/decodelabs/exceptional/tree/v0.6.7"
             },
-            "time": "2025-10-03T12:32:20+00:00"
+            "time": "2025-10-31T10:48:16+00:00"
         },
         {
             "name": "decodelabs/fabric",
@@ -1366,16 +1366,16 @@
         },
         {
             "name": "decodelabs/greenleaf",
-            "version": "v0.10.4",
+            "version": "v0.10.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/greenleaf.git",
-                "reference": "4ff2d9c53750b67111bcd0901a59c0b85ccf926d"
+                "reference": "0ad617e1c1a37bfd529cd7592753d19186139c2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/4ff2d9c53750b67111bcd0901a59c0b85ccf926d",
-                "reference": "4ff2d9c53750b67111bcd0901a59c0b85ccf926d",
+                "url": "https://api.github.com/repos/decodelabs/greenleaf/zipball/0ad617e1c1a37bfd529cd7592753d19186139c2c",
+                "reference": "0ad617e1c1a37bfd529cd7592753d19186139c2c",
                 "shasum": ""
             },
             "require": {
@@ -1442,9 +1442,9 @@
             "description": "Super-fast directory based HTTP router",
             "support": {
                 "issues": "https://github.com/decodelabs/greenleaf/issues",
-                "source": "https://github.com/decodelabs/greenleaf/tree/v0.10.4"
+                "source": "https://github.com/decodelabs/greenleaf/tree/v0.10.5"
             },
-            "time": "2025-10-03T15:37:15+00:00"
+            "time": "2025-10-29T12:28:22+00:00"
         },
         {
             "name": "decodelabs/harvest",
@@ -1590,16 +1590,16 @@
         },
         {
             "name": "decodelabs/horizon",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/horizon.git",
-                "reference": "f9387aa689aa30c616ced94dabea6513eca7f0a9"
+                "reference": "43386fde8717162eeb8930370283ffdfcdabfcb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/f9387aa689aa30c616ced94dabea6513eca7f0a9",
-                "reference": "f9387aa689aa30c616ced94dabea6513eca7f0a9",
+                "url": "https://api.github.com/repos/decodelabs/horizon/zipball/43386fde8717162eeb8930370283ffdfcdabfcb1",
+                "reference": "43386fde8717162eeb8930370283ffdfcdabfcb1",
                 "shasum": ""
             },
             "require": {
@@ -1648,9 +1648,9 @@
             "description": "Simple HTML view containers",
             "support": {
                 "issues": "https://github.com/decodelabs/horizon/issues",
-                "source": "https://github.com/decodelabs/horizon/tree/v0.5.1"
+                "source": "https://github.com/decodelabs/horizon/tree/v0.5.2"
             },
-            "time": "2025-10-03T15:37:55+00:00"
+            "time": "2025-10-29T12:30:16+00:00"
         },
         {
             "name": "decodelabs/iota",
@@ -1911,16 +1911,16 @@
         },
         {
             "name": "decodelabs/monarch",
-            "version": "v0.2.2",
+            "version": "v0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/monarch.git",
-                "reference": "e15f568834b8e4d865219d759b15f58404fff489"
+                "reference": "f307ca85be9a114737e87852c70f4ef7333cb783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/monarch/zipball/e15f568834b8e4d865219d759b15f58404fff489",
-                "reference": "e15f568834b8e4d865219d759b15f58404fff489",
+                "url": "https://api.github.com/repos/decodelabs/monarch/zipball/f307ca85be9a114737e87852c70f4ef7333cb783",
+                "reference": "f307ca85be9a114737e87852c70f4ef7333cb783",
                 "shasum": ""
             },
             "require": {
@@ -1960,22 +1960,22 @@
             "description": "A single shared source of truth for your PHP apps",
             "support": {
                 "issues": "https://github.com/decodelabs/monarch/issues",
-                "source": "https://github.com/decodelabs/monarch/tree/v0.2.2"
+                "source": "https://github.com/decodelabs/monarch/tree/v0.2.3"
             },
-            "time": "2025-09-10T14:07:12+00:00"
+            "time": "2025-10-07T08:34:20+00:00"
         },
         {
             "name": "decodelabs/nuance",
-            "version": "v0.2.0",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/nuance.git",
-                "reference": "8230a49c6bd3c416e41843e2ef2703a45318a493"
+                "reference": "ffb11f5ae7dc149a5431983626f2625eee37ebff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/nuance/zipball/8230a49c6bd3c416e41843e2ef2703a45318a493",
-                "reference": "8230a49c6bd3c416e41843e2ef2703a45318a493",
+                "url": "https://api.github.com/repos/decodelabs/nuance/zipball/ffb11f5ae7dc149a5431983626f2625eee37ebff",
+                "reference": "ffb11f5ae7dc149a5431983626f2625eee37ebff",
                 "shasum": ""
             },
             "require": {
@@ -2016,9 +2016,9 @@
             "description": "Type inspection tools",
             "support": {
                 "issues": "https://github.com/decodelabs/nuance/issues",
-                "source": "https://github.com/decodelabs/nuance/tree/v0.2.0"
+                "source": "https://github.com/decodelabs/nuance/tree/v0.2.2"
             },
-            "time": "2025-10-03T14:50:41+00:00"
+            "time": "2025-10-07T08:50:43+00:00"
         },
         {
             "name": "decodelabs/overpass",
@@ -2141,16 +2141,16 @@
         },
         {
             "name": "decodelabs/remnant",
-            "version": "v0.2.4",
+            "version": "v0.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/remnant.git",
-                "reference": "93880d6f667dbee819767e198cac61a162696ec1"
+                "reference": "82a396ce35d80f652f38d8db6a928c73876bf29d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/remnant/zipball/93880d6f667dbee819767e198cac61a162696ec1",
-                "reference": "93880d6f667dbee819767e198cac61a162696ec1",
+                "url": "https://api.github.com/repos/decodelabs/remnant/zipball/82a396ce35d80f652f38d8db6a928c73876bf29d",
+                "reference": "82a396ce35d80f652f38d8db6a928c73876bf29d",
                 "shasum": ""
             },
             "require": {
@@ -2186,9 +2186,9 @@
             "description": "Easier stack traces",
             "support": {
                 "issues": "https://github.com/decodelabs/remnant/issues",
-                "source": "https://github.com/decodelabs/remnant/tree/v0.2.4"
+                "source": "https://github.com/decodelabs/remnant/tree/v0.2.5"
             },
-            "time": "2025-10-03T15:21:09+00:00"
+            "time": "2025-10-03T17:05:24+00:00"
         },
         {
             "name": "decodelabs/singularity",
@@ -2584,16 +2584,16 @@
         },
         {
             "name": "decodelabs/wellspring",
-            "version": "v0.1.2",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/wellspring.git",
-                "reference": "266bdfe06f0a6e7314d49ad59417a691f5107f44"
+                "reference": "48c94c4e2d0f9baba7f342ccc3417ff0caaed65d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/wellspring/zipball/266bdfe06f0a6e7314d49ad59417a691f5107f44",
-                "reference": "266bdfe06f0a6e7314d49ad59417a691f5107f44",
+                "url": "https://api.github.com/repos/decodelabs/wellspring/zipball/48c94c4e2d0f9baba7f342ccc3417ff0caaed65d",
+                "reference": "48c94c4e2d0f9baba7f342ccc3417ff0caaed65d",
                 "shasum": ""
             },
             "require": {
@@ -2605,7 +2605,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -2626,9 +2626,9 @@
             "description": "PHP autoload management tools",
             "support": {
                 "issues": "https://github.com/decodelabs/wellspring/issues",
-                "source": "https://github.com/decodelabs/wellspring/tree/v0.1.2"
+                "source": "https://github.com/decodelabs/wellspring/tree/v0.2.0"
             },
-            "time": "2025-02-11T07:20:39+00:00"
+            "time": "2025-10-31T10:44:28+00:00"
         },
         {
             "name": "decodelabs/zest",
@@ -4172,11 +4172,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.30",
+            "version": "2.1.31",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a4a7f159927983dd4f7c8020ed227d80b7f39d7d",
-                "reference": "a4a7f159927983dd4f7c8020ed227d80b7f39d7d",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ead89849d879fe203ce9292c6ef5e7e76f867b96",
+                "reference": "ead89849d879fe203ce9292c6ef5e7e76f867b96",
                 "shasum": ""
             },
             "require": {
@@ -4221,7 +4221,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-02T16:07:52+00:00"
+            "time": "2025-10-10T14:14:11+00:00"
         }
     ],
     "aliases": [],
