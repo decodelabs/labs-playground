@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46ee9b81ce053452d587396e6e4c0edc",
+    "content-hash": "01b3893093647396bf141f5be74b286c",
     "packages": [
         {
             "name": "brick/math",
@@ -1448,16 +1448,16 @@
         },
         {
             "name": "decodelabs/harvest",
-            "version": "v0.7.2",
+            "version": "v0.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/decodelabs/harvest.git",
-                "reference": "47477d4ef8e2f839547c93c101c7e543676832b1"
+                "reference": "f249346b0d7b8b1c681e1ec7e75253f3a2a1ec5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/47477d4ef8e2f839547c93c101c7e543676832b1",
-                "reference": "47477d4ef8e2f839547c93c101c7e543676832b1",
+                "url": "https://api.github.com/repos/decodelabs/harvest/zipball/f249346b0d7b8b1c681e1ec7e75253f3a2a1ec5d",
+                "reference": "f249346b0d7b8b1c681e1ec7e75253f3a2a1ec5d",
                 "shasum": ""
             },
             "require": {
@@ -1468,6 +1468,7 @@
                 "decodelabs/deliverance": "^0.3.4",
                 "decodelabs/enumerable": "^0.2.8",
                 "decodelabs/exceptional": "^0.6.3",
+                "decodelabs/fluidity": "^0.3.7",
                 "decodelabs/kingdom": "^0.2",
                 "decodelabs/monarch": "^0.2.1",
                 "decodelabs/nuance": "^0.2",
@@ -1528,9 +1529,9 @@
             "description": "PSR-15 HTTP stack without the mess",
             "support": {
                 "issues": "https://github.com/decodelabs/harvest/issues",
-                "source": "https://github.com/decodelabs/harvest/tree/v0.7.2"
+                "source": "https://github.com/decodelabs/harvest/tree/v0.7.3"
             },
-            "time": "2025-10-03T15:33:48+00:00"
+            "time": "2025-11-12T22:29:25+00:00"
         },
         {
             "name": "decodelabs/hatch",
@@ -3904,16 +3905,16 @@
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v3.6.0",
+            "version": "v3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "df210c7a2573f1913b2d17cc95f90f53a73d8f7d"
+                "reference": "65a8bc82080447fae78373aa10f8d13b38338977"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/df210c7a2573f1913b2d17cc95f90f53a73d8f7d",
-                "reference": "df210c7a2573f1913b2d17cc95f90f53a73d8f7d",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/65a8bc82080447fae78373aa10f8d13b38338977",
+                "reference": "65a8bc82080447fae78373aa10f8d13b38338977",
                 "shasum": ""
             },
             "require": {
@@ -3962,7 +3963,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/translation-contracts/tree/v3.6.0"
+                "source": "https://github.com/symfony/translation-contracts/tree/v3.6.1"
             },
             "funding": [
                 {
@@ -3974,11 +3975,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-27T08:32:26+00:00"
+            "time": "2025-07-15T13:41:35+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4172,11 +4177,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.31",
+            "version": "2.1.32",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ead89849d879fe203ce9292c6ef5e7e76f867b96",
-                "reference": "ead89849d879fe203ce9292c6ef5e7e76f867b96",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e126cad1e30a99b137b8ed75a85a676450ebb227",
+                "reference": "e126cad1e30a99b137b8ed75a85a676450ebb227",
                 "shasum": ""
             },
             "require": {
@@ -4221,7 +4226,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-10T14:14:11+00:00"
+            "time": "2025-11-11T15:18:17+00:00"
         }
     ],
     "aliases": [],
