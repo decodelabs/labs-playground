@@ -55,7 +55,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": {
-    }
+    "prefer-stable": true
 }
