@@ -25,8 +25,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0(vite@6.4.2)
       '@decodelabs/vite-plugin-zest':
-        specifier: ^0.3.2
-        version: 0.3.2(vite@6.4.2)
+        specifier: ^0.3.5
+        version: 0.3.5(vite@6.4.2)
       '@vitejs/plugin-react':
         specifier: ^4.7.0
         version: 4.7.0(vite@6.4.2)
@@ -441,8 +441,8 @@ packages:
     peerDependencies:
       vite: ^6
 
-  '@decodelabs/vite-plugin-zest@0.3.2':
-    resolution: {integrity: sha512-KHBc+ScDTc3OirxjpU25JDL823TP8k17L8pbpNxjbKStb3EZLZPSaFRU9lnZAJGCQGmGNUrBbqT9rqinpfeqig==}
+  '@decodelabs/vite-plugin-zest@0.3.5':
+    resolution: {integrity: sha512-sGGgyC7Llbiz3tFbsTghB99mrSR+UHfF/n1eWOVyO6tKqIvFnAuImnlC5BGQ8YnmsGU/pIHIzY8NWCMEwjbBrw==}
     peerDependencies:
       vite: ^6
 
@@ -1639,7 +1639,7 @@ snapshots:
     dependencies:
       vite: 6.4.2
 
-  '@decodelabs/vite-plugin-zest@0.3.2(vite@6.4.2)':
+  '@decodelabs/vite-plugin-zest@0.3.5(vite@6.4.2)':
     dependencies:
       vite: 6.4.2
 

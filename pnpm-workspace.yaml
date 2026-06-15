@@ -1,2 +1,4 @@
+minimumReleaseAgeExclude:
+  - '@decodelabs/vite-plugin-zest@0.3.5'
 onlyBuiltDependencies:
   - esbuild
