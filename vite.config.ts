@@ -33,6 +33,13 @@ export default defineConfig({
 
     server: {
         port: 6543,
+        watch: {
+            usePolling: true,
+            interval: 500,
+            ignored: [
+                '**/*',
+            ],
+        },
         cors: {
             origin: '*'
         }
