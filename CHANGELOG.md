@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactored to use Kingdom Service architecture
 - Upgraded Bootstrap
 - Integrated optimized autoload dump in Genesis
+- Updated pnpm dependencies

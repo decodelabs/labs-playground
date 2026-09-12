@@ -1,0 +1,8 @@
+[manifest]
+minimum_effigy_version = "0.7.0"
+
+[bundle]
+base = { type = "git", url = "git@github.com:decodelabs/decodelabs-effigy-bundle.git", ref = "main" }
+host = "labs-playground.legacy.test"
+databases = ["labs-playground"]
+zest_port = 9765
